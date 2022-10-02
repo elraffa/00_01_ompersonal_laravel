@@ -1,0 +1,52 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
+.btn {
+    padding: 1rem 2rem;
+    border: none;
+    font-weight: 600;
+    border-radius: 1.4rem;
+    color: white;
+    cursor: pointer;
+
+    &__primary {
+
+        background-color: $brand-color;
+        text-transform: uppercase;
+
+        &:hover {
+            color: white;
+            background-color: $dark-brand;
+        }
+
+        @include respond-below(lg) {
+            font-size: 12px;
+            padding: 0.5rem 1rem;
+        }
+    
+        &-lg {
+            background-color: $brand-color;
+            text-transform: uppercase;
+            font-size: 1.8rem;
+
+            &:hover {
+                color: white;
+                background-color: $dark-brand;
+            }
+
+            @include respond-below(lg) {
+                font-size: 1rem;
+            }
+        }
+
+    }
+
+    &__mobile {
+        @include respond-above(lg) {
+            display: none;
+        }
+    }
+}
+
+
+

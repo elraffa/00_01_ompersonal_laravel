@@ -1,0 +1,122 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the footer of the site/application.
+// -----------------------------------------------------------------------------
+
+.footer {
+    background-color: $dark-brand;
+
+    &__content {
+        display: flex;
+        gap: 2rem;
+        justify-content: space-around;
+        padding: 80px 0;
+
+        @include respond-below(lg) {
+            flex-direction: column;
+            padding: 0 20px;
+        }
+    }
+
+    &__menu {
+        display: flex;
+        justify-content: space-between;
+
+        @include respond-below (lg) {
+            flex-direction: column;
+        }
+    }
+
+    &__menu-col {
+        display: flex;
+        flex: 0 0 330px;
+        flex-direction: column;
+
+        @include respond-below(lg) {
+            flex: 0 auto;
+        }
+    }
+
+
+
+    &__menu-col {
+        display: flex;
+        flex: 0 0 330px;
+        flex-direction: column;
+
+        @include respond-below(lg) {
+            flex: 0 auto;
+        }
+    }
+
+    &__menu-heading-3 {
+        color: $light-brand;
+        margin-bottom: 0.2rem;
+        text-transform: uppercase;
+        font-weight: map-get($font-weights, 'bold' );
+
+        a {
+            color: white;
+
+            &:hover {
+                color: $light-brand;
+            }
+        }
+
+        @include respond-below(lg) {
+            font-size: 1.05rem;
+            padding: 25px 0 15px 0;
+            margin: 0;
+        }
+    }
+
+    &__menu-heading-4 {
+        font-size: 1.5rem;
+        margin-bottom: 0.2rem;
+        padding-bottom: 0.8rem;
+        color: white;
+        text-transform: uppercase;
+        font-weight: map-get($font-weights, 'bold' );
+        border-bottom: 1px solid $light-brand;
+
+        @include respond-below(lg) {
+            font-size: 1.15rem;
+            padding: 25px 0 15px 0;
+            margin: 0;
+        }
+    }
+
+    &__menu-item {
+        font-size: 1rem;
+        color: white;
+        
+        &:hover {
+            color: $light-brand;
+        }
+
+        @include respond-below(lg) {
+            font-size: 1.1rem;
+        }
+    }
+
+    &__copyright {
+        background-color: $darker-brand;
+        color: white;
+        padding: 40px;
+    }
+
+    &__text {
+        &-legales {
+            text-align: center;
+            margin: 0 auto;
+
+            a {
+                color: $brand-color;
+
+                &:hover {
+                    color: $light-brand;
+                }
+            }
+        }
+    }
+
+}

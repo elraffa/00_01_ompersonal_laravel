@@ -1,0 +1,76 @@
+/**
+ * Basic typography style for copy text
+ */
+body {
+  color: $text-color;
+  font: normal 100% / 1.4 $text-font-stack;
+}
+
+.bold {
+  font-weight: map-get($font-weights, "bold");
+}
+
+.bolder {
+  font-weight: map-get($font-weights, "bolder");
+}
+
+.align-center {
+  text-align: center;
+}
+
+.text {
+  &__main {
+    font-size: 1rem;
+    line-height: 1;
+  }
+}
+
+.title {
+
+  &__heading-1 {
+    font-size: 4rem;
+    line-height: 1;
+    margin: 0;
+    padding-bottom: 0.6rem;
+    font-weight: map-get($font-weights, "bold");
+
+    @include respond-below(lg) {
+        font-size: 3rem;
+    }
+  }
+
+  &__heading-2 {
+      font-size: 3rem;
+      line-height: 1;
+      margin: 0;
+      padding-bottom: 0.6rem;
+
+
+      @include respond-below(lg) {
+          font-size: 2rem;
+      }
+    }
+
+    &__heading-3 {
+      font-size: 2rem;
+      line-height: 1;
+      margin: 0;
+      padding-bottom: 0.6rem;
+
+
+      @include respond-below(lg) {
+          font-size: 1.5rem;
+      }
+    }
+
+    &__heading-4 {
+      font-size: 1.5rem;
+      line-height: 1;
+      margin: 0;
+      padding-bottom: 0.5rem;
+
+      @include respond-below(lg) {
+          font-size: 1.25rem;
+      }
+    }
+  }
