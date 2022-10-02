@@ -261,31 +261,6 @@
             </div>
         </div><!-- End hero -->
 
-        <!-- Slider main container -->
-        <div class="slider">
-            
-            <div class="swiper container">
-                <h1>Cuentos cortos con audio</h1>
-                <!-- Additional required wrapper -->
-                <div class="swiper-wrapper">
-                    <!-- Slides -->
-                    <div class="swiper-slide">
-                        <h2>Audiolibros</h2>
-                    </div>
-                    <div class="swiper-slide">Slide 2</div>
-                    <div class="swiper-slide">Slide 3</div>
-                    ...
-                </div>
-                <!-- If we need pagination -->
-                <div class="swiper-pagination"></div>
-
-
-                <!-- If we need scrollbar -->
-                <div class="swiper-scrollbar"></div>
-            </div>
-        </div>
-        <!-- End slider -->
-
         <!-- Begin novedades -->
         <div class="novedades">
             <div class="novedades__content container">
