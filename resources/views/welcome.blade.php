@@ -11,6 +11,8 @@
 
         <!-- Styles -->
         <link rel="stylesheet" href="/css/main.css">
+        @vite(['resources/css/app.css', 'resources/js/app.js'])
+
     </head>
     <body>
 
@@ -22,7 +24,7 @@
                 <ul class="navbar__navbar-menu">
 
                     <li class="navbar__navbar-menu-item">
-                        <a href="#" id="navbtn_cursos" onclick="om_open_nav('cursos')">
+                        <a href="#" id="navbtn_cursos">
                             Cursos gratis
                             <i class="fa fa-caret-down"></i>
                             <i class="fa fa-caret-up" style="display: none"></i>
@@ -236,8 +238,7 @@
             </nav>
             <a class="btn btn__primary">Inscríbete gratis</a>
 
-            <button href="javascript:void(0)" class="navbar__hamburger-button js-hamburger-button"
-                onclick="mobileMenu()" aria-label="Navigation Menu">
+            <button href="" class="navbar__hamburger-button js-hamburger-button" aria-label="Navigation Menu">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -393,7 +394,6 @@
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <!-- <script src="js/swiper.js"></script> -->
-    <script src="js/app.js"></script>
 </body>
 
 </html>
