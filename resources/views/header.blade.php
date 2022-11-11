@@ -237,7 +237,7 @@
                     </li>
                 </ul>
             </nav>
-            <a class="btn btn__primary">Inscríbete gratis</a>
+            <a href="{{ route('register') }}" class="btn btn__primary">Inscríbete gratis</a>
 
             <button href="" class="navbar__hamburger-button js-hamburger-button" aria-label="Navigation Menu">
                 <span></span>
