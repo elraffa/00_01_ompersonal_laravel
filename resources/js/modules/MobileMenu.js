@@ -2,7 +2,6 @@ class MobileMenu {
     constructor() {
       this.menu = document.querySelector(".navbar__navbar")
       this.openButton = document.querySelector(".js-hamburger-button")
-      console.log(this.openButton);
       this.events()
     }
   

@@ -1,9 +1,9 @@
 import MobileMenu from './modules/MobileMenu'
 import NavMenu from './modules/NavMenu'
-
-console.log('hello from file again this different');
+import FaqAccordion from './modules/FaqAccordion'
 
 const mobileMenu = new MobileMenu();
+const faqAccordion = new FaqAccordion();
 const navMenu = new NavMenu();
 
 let buttonNav = document.getElementById('navbtn_cursos');
@@ -31,8 +31,6 @@ function om_open_nav(x) {
   }
 }
 
-
-
 function om_close_nav(x) {
   document.getElementById('nav_' + x).style.display = 'none';
   if (document.getElementById('navbtn_' + x)) {
@@ -54,11 +52,9 @@ function om_close_all_nav() {
   om_close();
 }
 
-
-
 // FAQ Accordion
-
 var acc = document.getElementsByClassName('accordion');
+console.log(acc);
 var i;
 
 for (i = 0; i < acc.length; i++) {
