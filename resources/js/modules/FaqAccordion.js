@@ -12,7 +12,6 @@ class FaqAccordion {
         let i;
         for (i = 0; i < this.accordion.length; i++) {
             this.accordion[i].addEventListener('click', function () {
-                console.log('item clicked')
                 this.classList.toggle('active');
                 var panel = this.nextElementSibling;
                 if (panel.style.maxHeight) {

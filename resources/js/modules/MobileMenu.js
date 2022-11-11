@@ -13,7 +13,6 @@ class MobileMenu {
     // Methods
     openMenu() {
       this.openButton.classList.toggle("expanded")
-      this.openButton.classList.toggle("fa-window-close")
       this.menu.classList.toggle("expanded")
     }
   }

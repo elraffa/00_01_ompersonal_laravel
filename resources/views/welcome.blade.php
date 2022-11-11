@@ -12,6 +12,7 @@
         <!-- Styles -->
         <link rel="stylesheet" href="/css/main.css">
         @vite(['resources/sass/main.scss', 'resources/js/app.js'])
+        <script src="https://kit.fontawesome.com/3a69b944ac.js" crossorigin="anonymous"></script>
 
     </head>
     <body>
@@ -78,7 +79,7 @@
                     </li>
 
                     <li class="navbar__navbar-menu-item"><a href="#" id="navbtn_aprendizaje"
-                            onclick="om_open_nav('aprendizaje')">Aprendizaje y
+                            >Aprendizaje y
                             práctica <i class="fa fa-caret-down"></i> <i class="fa fa-caret-up"
                                 style="display: none"></i></a>
                         <!-- Dropdown Aprendizaje -->
@@ -124,7 +125,7 @@
                         </nav>
                     </li>
                     <li class="navbar__navbar-menu-item">
-                        <a href="#" id="navbtn_listening" onclick="om_open_nav('listening')">Listening <i
+                        <a href="#" id="navbtn_listening">Listening <i
                                 class="fa fa-caret-down"></i> <i class="fa fa-caret-up" style="display: none"></i>
                         </a>
 
@@ -201,7 +202,7 @@
 
                     </li>
                     <li class="navbar__navbar-menu-item">
-                        <a href="#" id="navbtn_servicios" onclick="om_open_nav('servicios')">Servicios <i
+                        <a href="#" id="navbtn_servicios">Servicios <i
                                 class="fa fa-caret-down"></i><i class="fa fa-caret-up" style="display: none"></i>
                         </a>
 
