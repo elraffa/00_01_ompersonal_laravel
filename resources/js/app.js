@@ -1,8 +1,10 @@
 import MobileMenu from './modules/MobileMenu'
+import NavMenu from './modules/NavMenu'
 
 console.log('hello from file again this different');
 
 const mobileMenu = new MobileMenu();
+const navMenu = new NavMenu();
 
 let buttonNav = document.getElementById('navbtn_cursos');
 buttonNav.addEventListener('click', om_open_nav('cursos'));

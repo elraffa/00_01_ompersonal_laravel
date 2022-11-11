@@ -6,10 +6,12 @@ class MobileMenu {
       this.events()
     }
   
+    // Events
     events() {
       this.openButton.addEventListener("click", () => this.openMenu())
     }
-  
+    
+    // Methods
     openMenu() {
       this.openButton.classList.toggle("expanded")
       this.openButton.classList.toggle("fa-window-close")

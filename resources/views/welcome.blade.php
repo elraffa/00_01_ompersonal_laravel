@@ -11,7 +11,7 @@
 
         <!-- Styles -->
         <link rel="stylesheet" href="/css/main.css">
-        @vite(['resources/css/app.css', 'resources/js/app.js'])
+        @vite(['resources/sass/main.scss', 'resources/js/app.js'])
 
     </head>
     <body>
