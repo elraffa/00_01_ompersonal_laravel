@@ -5,6 +5,8 @@ class NavMenu {
         this.btnListening = document.querySelector('#navbtn_listening');
         this.btnServicios = document.querySelector('#navbtn_servicios');
         this.icon = document.getElementsByTagName('i');
+        this.closeBtn = document.querySelector('.nav_close_btn');
+        console.log(document.querySelectorAll('.nav_close_btn'));
         this.events()
     }
 
@@ -21,6 +23,9 @@ class NavMenu {
         this.btnServicios.addEventListener('click', () => {
             this.om_open_nav('servicios');
         })
+        this.closeBtn.addEventListener('click', () => {
+          this.om_close_nav(x);
+        })
     }
 
     om_open_nav(x) {
@@ -34,8 +39,8 @@ class NavMenu {
           document.getElementById('nav_' + x).style.display = 'block';
       
           if (document.getElementById('navbtn_' + x)) {
-            document.getElementById('navbtn_' + x)
-            this.icon[0].style.display = 'none';
+            document.querySelector('#navbtn_' + x).getElementsByTagName('i').style.display = 'none';
+            console.log((document.querySelector('#navbtn_' + x)).getElementsByTagName('i'));
             document.getElementById('navbtn_' + x)
             this.icon[1].style.display = 'inline';
             document.getElementById('navbtn_' + x).classList.add('navbtn_active');
@@ -55,11 +60,11 @@ class NavMenu {
       }
 
       om_close_all_nav() {
+        this.om_close_nav(x);
         this.om_close_nav('cursos');
         this.om_close_nav('aprendizaje');
         this.om_close_nav('listening');
         this.om_close_nav('servicios');
-        om_close();
       }
       
 }

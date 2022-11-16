@@ -34,7 +34,7 @@
                         <!-- Dropdown Cursos -->
                         <nav id="nav_cursos" class="nav_dropdown">
                             <div class="container">
-                                <button class="nav_close_btn" onclick="om_close_nav('cursos')">
+                                <button class="nav_close_btn">
                                     <i class="fa fa-times-circle"></i>
                                 </button>
                                 <!-- Cursos Gratis Dropdown -->
@@ -85,7 +85,7 @@
                         <!-- Dropdown Aprendizaje -->
                         <nav id="nav_aprendizaje" class="nav_dropdown">
                             <div class="container">
-                                <button class="nav_close_btn" onclick="om_close_nav('aprendizaje')">
+                                <button class="nav_close_btn">
                                     <i class="fa fa-times-circle"></i>
                                 </button>
                                 <div class="om_dropdown">
@@ -132,13 +132,10 @@
                         <!-- Dropdown Listening -->
                         <nav id="nav_listening" class="nav_dropdown">
                             <div class="container">
-                                <button class="nav_close_btn" onclick="om_close_nav('listening')">
+                                <button class="nav_close_btn">
                                     <i class="fa fa-times-circle"></i>
                                 </button>
                                 <div class="om_dropdown">
-                                    <div class="nav_close_btn">
-                                        <i class="fa-solid fa-rectangle-xmark"></i>
-                                    </div>
                                     <h2><i class="fas fa-headphones"></i> Listening</h2>
                                     <div class="om_dropdown_menu-listening">
                                         <div class="om_dropdown_menu-listening-col">
@@ -209,7 +206,7 @@
                         <!-- Dropdown Servicios -->
                         <nav id="nav_servicios" class="nav_dropdown">
                             <div class="container">
-                                <button class="nav_close_btn" onclick="om_close_nav('servicios')">
+                                <button class="nav_close_btn">
                                     <i class="fa fa-times-circle"></i>
                                 </button>
                                 <div class="om_dropdown">

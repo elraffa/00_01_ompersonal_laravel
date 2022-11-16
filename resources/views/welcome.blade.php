@@ -1,4 +1,4 @@
-@include('header');
+@include('header')
 
     <main id="main" class="main">
         <!-- Begin Hero -->
@@ -91,60 +91,4 @@
         </div><!-- End FAQ -->
     </main>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footer__content container">
-            <div class="footer__col-1">
-                <div class="title__heading-4 bold">Hola</div>
-            </div>
-            <div class="footer__col-1">
-                <div class="footer__menu-heading-4 bold align-center">Todos los cursos</div>
-                <h3 class="footer__menu-heading-3 align-center"><a href="#"><span class="bold">OM Placement Test</span>
-                        (Examen de Nivel y Ubicación)</a></h3>
-                <div class="footer__menu-col">
-                    <h3 class="footer__menu-heading-3">Etapa Iniciación</h3>
-                    <a class="footer__menu-item" href="#">Principiantes (A1)</a>
-                    <h3 class="footer__menu-heading-3">Etapa Aprendizaje</h3>
-                    <a class="footer__menu-item" href="#">Básico a Intermedio Bajo (A2)</a>
-                    <a class="footer__menu-item" href="#">Intermedio a Intermedio Alto (B1 - Primera Parte)</a>
-                    <a class="footer__menu-item" href="#">Avanzado Conversacional (B1 - Segunda Parte)</a>
-                </div>
-                <div class="footer__menu-col">
-                    <h3 class="footer__menu-heading-3">Etapa Académica</h3>
-                    <a class="footer__menu-item" href="#">FCE - First Certificate (B2)</a>
-                    <a class="footer__menu-item" href="#">CAE - Advanced (C1)</a>
-                    <a class="footer__menu-item" href="#">CPE - Proficiency (C2)</a>
-                    <a class="footer__menu-item" href="#">TOEFL Test</a>
-                </div>
-                <div class="footer__menu-col">
-                    <h3 class="footer__menu-heading-3">Etapa Especialización</h3>
-                    <a class="footer__menu-item" href="#">Avanzado de Negocios</a>
-                    <a class="footer__menu-item" href="#">Pronunciación en Inglés</a>
-                    <a class="footer__menu-item" href="#">Redacción en Inglés</a>
-                    <a class="footer__menu-item" href="#">Conversación en Inglés</a>
-                    <a class="footer__menu-item" href="#">Básico a Intermedio Bajo para Sordos e Hipoacúsicos (A2)</a>
-                </div>
-            </div>
-            <div class="footer__col-1">
-                <div class="title__heading-4 bold">Hola</div>
-            </div>
-            <div class="footer__col-1">
-                <div class="title__heading-4 bold">Hola</div>
-            </div>
-        </div>
-        <div class="footer__copyright">
-            <p class="footer__text-legales"><span class="bold">2022 - OM PERSONAL MULTIMEDIA ENGLISH: Desde 1999 en
-                    Internet.<br>© Orlando Moure - Todos los derechos reservados</span>
-            <p class="footer__text-legales"> Buenos Aires, República Argentina | <a
-                    href="http://www.ompersonal.com.ar">Dashboard page</a> | Correo: info@ompersonal.com.ar</p>
-            <p class="footer__text-legales"> Términos Legales | Política de Tratamiento de Datos Personales</p>
-            <p class="footer__text-legales">Queda absolutamente prohibida la reproducción o descarga de contenidos de
-                este portal.</p>
-        </div>
-    </footer>
-
-    </div>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script> -->
-</body>
-
-</html>
+   @include('footer')
