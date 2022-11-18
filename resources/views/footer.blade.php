@@ -4,26 +4,26 @@
 
          <div class="footer__row">
 
-             <div class="footer__col--40">
-                 <div class="title__heading-4 bold">
+             <div class="footer__col--wide">
+                 
                      <img src="{{ asset('/img') }}/logo.png" width="150" />
-                 </div>
+                 
              </div>
              <div class="footer__col">
-                 <h4 class="title__heading-4 bold">Términos Legales</h4>
-                 <h4 class="title__heading-4 bold">Datos Personales</h4>
-                 <h4 class="title__heading-4 bold">Correo Electrónico</h4>
-                 <h4 class="title__heading-4 bold">Home page</h4>
+                 <h4 class="title__heading-4"><a href="http://www.ompersonal.com.ar/legales.htm">Términos Legales</a></h4>
+                 <h4 class="title__heading-4"><a href="http://www.ompersonal.com.ar/legales.htm">Datos Personales</a></h4>
+                 <h4 class="title__heading-4">Correo Electrónico</h4>
+                 <h4 class="title__heading-4">Home page</h4>
 
              </div>
              <div class="footer__col">
-                 <div class="title__heading-4 bold">Regístrate</div>
-                 <div class="title__heading-4 bold">Escritorio</div>
+                 <div class="title__heading-4">Regístrate</div>
+                 <div class="title__heading-4">Escritorio</div>
 
              </div>
 
              <div class="footer__col">
-                 <div class="title__heading-4 bold">
+                 <div class="title__heading-4">
                     Síguenos en
                  </div>
                  <div class="footer__social">
