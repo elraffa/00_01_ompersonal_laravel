@@ -6,7 +6,7 @@
             <div class="hero__content">
                 <h1 class="hero__title">Cursos y certificados</h1>
                 <h1 class="hero__subtitle">Estudia inglés 100% gratis</h1>
-                <button class="btn btn__primary-lg">Inscríbete gratis</button>
+                <a href="{{ route('register') }}" class="btn btn__primary-lg">Inscríbete gratis</a>
             </div>
             <div class="hero__image">
                 <img src="img/ilustracion-hero.png" alt="Estudia ingles 100% gratis" style="width:auto;">
@@ -27,7 +27,7 @@
                         <h3 class="novedades__text title__heading-2 bold">Estrenamos nuevos exámenes automatizados</h3>
                         <p class="title__heading-3">Con evaluación automática y generación de certificados</p>
                     </div>
-                    <button class="btn btn__primary-lg">Ver mas</button>
+                    <a href="http://www.ompersonal.com.ar/test/" class="btn btn__primary-lg">Ver mas</a>
                 </div>
             </div>
         </div><!-- End novedades -->
@@ -85,7 +85,7 @@
                             conveniente.</p>
                     </div>
                 </div>
-                <button class="faq__btn btn btn__primary-lg">Ver Todas</button>
+                <a href="http://www.ompersonal.com.ar/FAQ/faq.htm" class="faq__btn btn btn__primary-lg">Ver Todas</a>
             </div>
 
         </div><!-- End FAQ -->

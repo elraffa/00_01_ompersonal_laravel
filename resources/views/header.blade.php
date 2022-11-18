@@ -19,7 +19,7 @@
 
     <header class="navbar">
         <div class="navbar navbar__container container">
-            <a href="index.html"><img src="img/logo.png" width="100" alt="Ompersonal Logo" /></a>
+            <a href="/"><img src="img/logo.png" width="100" alt="Ompersonal Logo" /></a>
             <!-- Main navigation Menu -->
             <nav class="navbar__navbar toggle-mobile">
                 <ul class="navbar__navbar-menu">
@@ -42,7 +42,7 @@
 
                                     <h2><i class="fas fa-chalkboard-teacher"></i> Cursos Gratis</h2>
                                     <div class="om_dropdown-featured">
-                                        <a href="#"><span class="bold">OM Placement Test</span> (Examen de Nivel y
+                                        <a href="http://www.ompersonal.com.ar/test/"><span class="bold">OM Placement Test</span> (Examen de Nivel y
                                             Ubicación)</a>
                                     </div>
                                     <div class="om_dropdown_menu">
