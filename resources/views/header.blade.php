@@ -19,7 +19,7 @@
 
     <header class="navbar">
         <div class="navbar navbar__container container">
-            <a href="/"><img src="img/logo.png" width="100" alt="Ompersonal Logo" /></a>
+            <a href="/"><img src="{{ asset('/img/logo.png') }}" width="100" alt="Ompersonal Logo" /></a>
             <!-- Main navigation Menu -->
             <nav class="navbar__navbar toggle-mobile">
                 <ul class="navbar__navbar-menu">
