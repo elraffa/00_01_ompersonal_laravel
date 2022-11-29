@@ -2181,6 +2181,8 @@ return array(
     'Laravel\\Tinker\\Console\\TinkerCommand' => $vendorDir . '/laravel/tinker/src/Console/TinkerCommand.php',
     'Laravel\\Tinker\\TinkerCaster' => $vendorDir . '/laravel/tinker/src/TinkerCaster.php',
     'Laravel\\Tinker\\TinkerServiceProvider' => $vendorDir . '/laravel/tinker/src/TinkerServiceProvider.php',
+    'Laraveles\\Spanish\\Commands\\InstallLang' => $vendorDir . '/laraveles/spanish/src/Commands/InstallLang.php',
+    'Laraveles\\Spanish\\SpanishServiceProvider' => $vendorDir . '/laraveles/spanish/src/SpanishServiceProvider.php',
     'League\\CommonMark\\CommonMarkConverter' => $vendorDir . '/league/commonmark/src/CommonMarkConverter.php',
     'League\\CommonMark\\ConverterInterface' => $vendorDir . '/league/commonmark/src/ConverterInterface.php',
     'League\\CommonMark\\Delimiter\\Delimiter' => $vendorDir . '/league/commonmark/src/Delimiter/Delimiter.php',
