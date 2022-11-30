@@ -5,7 +5,7 @@
         <div class="hero container">
             <div class="hero__content">
                 <h1 class="hero__title">Cursos y certificados</h1>
-                <h1 class="hero__subtitle">Estudia inglés 100% gratis</h1>
+                <h1 class="hero__subtitle bold">Estudia inglés 100% gratis</h1>
                 <a href="{{ route('register') }}" class="btn btn__primary-lg">Inscríbete gratis</a>
             </div>
             <div class="hero__image">
