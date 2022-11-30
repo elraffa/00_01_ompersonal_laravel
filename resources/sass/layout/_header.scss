@@ -34,8 +34,7 @@ header {
             justify-content: space-around;
             align-items: center;
             font-weight: 600;
-            margin: 0 auto;
-            
+            margin: 0 auto;            
 
             :nth-child(4) {
                 margin-right: 5px;
@@ -49,6 +48,7 @@ header {
         &.expanded {
             background-color: $accent-dark;
             position: absolute;
+            opacity: 1;
             top: 89px;
             left: 0;
             width: 100%;
@@ -182,14 +182,10 @@ header {
     }
 }
 
-
-#nav_cursos, 
-#nav_aprendizaje, 
-#nav_listening, 
-#nav_servicios {
-    display: none;
+.nav_dropdown {
     position: absolute;
-    top: 98px;
+    display: block;
+    top: -600;
     right: 0;
     background-color: $dark-brand;
     width: 100%;
@@ -223,6 +219,10 @@ header {
     }
 }
 
+.show {
+    top: 98px;
+    transition: all 1s ease-in;
+}
 .om_dropdown {
     padding: 4.5rem 1.5rem 1.5rem 7rem;
 
@@ -359,8 +359,6 @@ header {
 
 .navbtn_active {
     background-color: $brand-color !important;
-    //color: white !important;
-
 
     a {
         &:hover {
