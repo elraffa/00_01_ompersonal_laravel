@@ -339,12 +339,13 @@ header {
 
     a {
         color: white;
-        padding: 0.6rem 0.3rem;
+        padding: 0.6rem 0.35rem;
         font-weight: map-get($font-weights, 'regular' );
 
         &:hover {
             background-color: $brand-color;
             display: block;
+            border-radius: 5px;
         }
 
         @include respond-below (lg) {
