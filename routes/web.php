@@ -6,9 +6,9 @@ use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
-Route::resource('users', UserController::class)
+/* Route::resource('users', UserController::class)
     ->only(['index', 'update', 'store', 'destroy','create','edit'])
-    ->middleware(['auth']);
+    ->middleware(['auth']); */
 
 /* Route::get('/', function () {
     return Inertia::render('views.welcome', [
