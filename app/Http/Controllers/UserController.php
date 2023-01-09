@@ -92,7 +92,7 @@ class UserController extends Controller
 
     public function edit(User $user)
     {
-        return Inertia::render('Users/Create', [
+        return Inertia::render('Users/Create_Edit', [
             'user' => [
                 'id' => $user->id,
                 'name' => $user->name,

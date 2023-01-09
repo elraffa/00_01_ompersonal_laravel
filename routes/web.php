@@ -1,13 +1,18 @@
 <?php
 
-use App\Http\Controllers\ProfileController;
-use App\Http\Controllers\UserController;
-use Illuminate\Foundation\Application;
-use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
+use Illuminate\Support\Facades\Route;
+use Illuminate\Foundation\Application;
+use App\Http\Controllers\UserController;
+use App\Http\Controllers\MembersController;
+use App\Http\Controllers\ProfileController;
 
 Route::resource('users', UserController::class)
-    ->only(['index', 'update', 'store', 'destroy','create','edit'])
+    ->only(['index', 'update', 'store', 'destroy', 'create', 'edit'])
+    ->middleware(['auth']);
+
+Route::resource('members', MembersController::class)
+    ->only(['index', 'update', 'store', 'destroy', 'create', 'edit'])
     ->middleware(['auth']);
 
 /* Route::get('/', function () {

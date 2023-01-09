@@ -9,7 +9,7 @@ function Index({auth, users}) {
         <AuthenticatedLayout auth={auth} header={<h2 className="font-semibold text-xl text-gray-800 leading-tight">Usuarios</h2>}>
             <Head title="Usuarios" />
             
-            <Paginator data={users}/>
+            <Paginator data={users} routeCreate={route("users.create")} routeEdit="users"/>
 
         </AuthenticatedLayout>
     );

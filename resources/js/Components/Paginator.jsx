@@ -2,18 +2,19 @@ import React from "react";
 import { format } from "date-fns";
 import { Link } from "@inertiajs/inertia-react";
 
-const Paginator = ({ data }) => {
-    
+const Paginator = ({ data, routeCreate, routeEdit }) => {
     return (
         <div className="w-[90%] lg:w-3/4 mx-auto">
             <div className="mt-6 flex flex-col gap-2 sm:flex-row-reverse items-center justify-between">
                 <div className="flex items-center justify-center">
-                    <Link
-                        className="px-4 py-2 bg-gray-800 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-gray-700 focus:bg-gray-700 active:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 transition ease-in-out duration-150"
-                        href={route("users.create")}
-                    >
-                        Nuevo Usuario
-                    </Link>
+                    {routeEdit === "users" && (
+                        <Link
+                            className="px-4 py-2 bg-gray-800 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-gray-700 focus:bg-gray-700 active:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 transition ease-in-out duration-150"
+                            href={routeCreate}
+                        >
+                            Nuevo Usuario
+                        </Link>
+                    )}
                 </div>
                 <div>
                     <label htmlFor="table-search" className="sr-only">
@@ -63,31 +64,43 @@ const Paginator = ({ data }) => {
                         </tr>
                     </thead>
                     <tbody>
-                        {data.data.map((user) => (
+                        {data.data.map((element) => (
                             <tr
-                                key={user.id}
+                                key={element.id}
                                 className="bg-white border-b hover:bg-gray-50"
                             >
                                 <th
                                     scope="row"
                                     className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
                                 >
-                                    {user.name}
+                                    {element.name}
                                 </th>
-                                <td className="px-6 py-4">{user.email}</td>
+                                <td className="px-6 py-4">{element.email}</td>
                                 <td className="px-6 py-4">
                                     {format(
-                                        new Date(user.created_at),
+                                        new Date(element.created_at),
                                         "dd-MM-yyyy hh:mm"
                                     )}
                                 </td>
                                 <td className="px-6 py-4">
-                                    <Link
-                                        href={`users/${user.id}/edit`}
-                                        className="font-medium text-blue-600 hover:underline"
-                                    >
-                                        Editar
-                                    </Link>
+                                    {routeEdit === "users" ? (
+                                        <Link
+                                            href={`${routeEdit}/${element.id}/edit`}
+                                            className="font-medium text-blue-600 hover:underline"
+                                        >
+                                            Editar
+                                        </Link>
+                                    ) : (
+                                        <Link
+                                            href={route(
+                                                `${routeEdit}.destroy`,
+                                                element.id
+                                            )}
+                                            className="font-medium text-red-600 hover:underline"
+                                        >
+                                            Eliminar
+                                        </Link>
+                                    )}
                                 </td>
                             </tr>
                         ))}
@@ -104,10 +117,14 @@ const Paginator = ({ data }) => {
                         </span>{" "}
                         de{" "}
                         <span className="font-semibold text-gray-900 ">
-                           {data.total}
+                            {data.total}
                         </span>
                     </span>
-                    <ul className={`${data.total <= data.per_page && 'hidden'} inline-flex items-center -space-x-px`}>
+                    <ul
+                        className={`${
+                            data.total <= data.per_page && "hidden"
+                        } inline-flex items-center -space-x-px`}
+                    >
                         {data.links.map((link) =>
                             link.label === "&laquo; Previous" ? (
                                 <li key={link.label}>
@@ -156,7 +173,10 @@ const Paginator = ({ data }) => {
                                 <li key={link.label}>
                                     <Link
                                         href={link.url}
-                                        className={`${link.active && 'text-blue-600 border border-blue-300 bg-blue-50 hover:bg-blue-100 hover:text-blue-700'} px-3 py-2 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700`}
+                                        className={`${
+                                            link.active &&
+                                            "text-blue-600 border border-blue-300 bg-blue-50 hover:bg-blue-100 hover:text-blue-700"
+                                        } px-3 py-2 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700`}
                                     >
                                         {link.label}
                                     </Link>
