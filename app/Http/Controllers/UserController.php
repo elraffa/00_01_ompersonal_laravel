@@ -20,7 +20,7 @@ class UserController extends Controller
 {
     public function create(): Response
     {
-        return Inertia::render('Users/Create');
+        return Inertia::render('Users/Create_Edit');
     }
 
     public function index()

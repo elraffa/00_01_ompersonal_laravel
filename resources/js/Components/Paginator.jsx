@@ -92,6 +92,7 @@ const Paginator = ({ data, routeCreate, routeEdit }) => {
                                         </Link>
                                     ) : (
                                         <Link
+                                            method="delete"
                                             href={route(
                                                 `${routeEdit}.destroy`,
                                                 element.id

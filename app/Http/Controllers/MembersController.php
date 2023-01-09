@@ -2,9 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Member;
 use Inertia\Inertia;
+use App\Models\Member;
 use Illuminate\Http\Request;
+use App\Providers\RouteServiceProvider;
 
 class MembersController extends Controller
 {
@@ -46,8 +47,10 @@ class MembersController extends Controller
         
     }
 
-    public function destroy($id)
+    public function destroy(Member $member)
     {
-        
+        $member->delete();
+
+        return redirect(RouteServiceProvider::MEMBERS);
     }
 }
