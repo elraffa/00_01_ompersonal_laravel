@@ -15,9 +15,9 @@ export default function Authenticated({ auth, header, children }) {
                     <div className="flex justify-between h-16">
                         <div className="flex">
                             <div className="shrink-0 flex items-center">
-                                <Link href="/">
+                                <a href="/">
                                     <ApplicationLogo className="block h-9 w-auto fill-current text-gray-800" />
-                                </Link>
+                                </a>
                             </div>
 
                             <div className="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
@@ -118,9 +118,9 @@ export default function Authenticated({ auth, header, children }) {
                         </div>
 
                         <div className="mt-3 space-y-1">
-                            <ResponsiveNavLink href={route('profile.edit')}>Perfil</ResponsiveNavLink>
+                            <ResponsiveNavLink href={route('profile.edit')}>Profile</ResponsiveNavLink>
                             <ResponsiveNavLink method="post" href={route('logout')} as="button">
-                                Cerrar sesión
+                                Log Out
                             </ResponsiveNavLink>
                         </div>
                     </div>
