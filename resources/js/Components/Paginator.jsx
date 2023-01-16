@@ -7,13 +7,21 @@ const Paginator = ({ data, routeCreate, routeEdit }) => {
         <div className="w-[90%] lg:w-3/4 mx-auto">
             <div className="mt-6 flex flex-col gap-2 sm:flex-row-reverse items-center justify-between">
                 <div className="flex items-center justify-center">
-                    {routeEdit === "users" && (
+                    {routeEdit === "users" ? (
                         <Link
                             className="px-4 py-2 bg-gray-800 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-gray-700 focus:bg-gray-700 active:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 transition ease-in-out duration-150"
                             href={routeCreate}
                         >
                             Nuevo Usuario
                         </Link>
+                    ) : (
+                        <a
+                            className="px-4 py-2 bg-green-800 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-green-700 focus:bg-green-700 active:bg-green-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 transition ease-in-out duration-150"
+                            href={route("members.export")}
+                            target="_blank"
+                        >
+                            Descargar CSV
+                        </a>
                     )}
                 </div>
                 <div>
@@ -92,6 +100,7 @@ const Paginator = ({ data, routeCreate, routeEdit }) => {
                                         </Link>
                                     ) : (
                                         <Link
+                                            as="button"
                                             method="delete"
                                             href={route(
                                                 `${routeEdit}.destroy`,

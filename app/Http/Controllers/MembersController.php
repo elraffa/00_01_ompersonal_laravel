@@ -2,9 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Exports\MembersExport;
 use Inertia\Inertia;
 use App\Models\Member;
 use Illuminate\Http\Request;
+use Maatwebsite\Excel\Facades\Excel;
 use App\Providers\RouteServiceProvider;
 
 class MembersController extends Controller
@@ -52,5 +54,11 @@ class MembersController extends Controller
         $member->delete();
 
         return redirect(RouteServiceProvider::MEMBERS);
+    }
+
+    public function export() 
+    {
+        ini_set('max_execution_time', 300);
+        return Excel::download(new MembersExport, 'members.csv', \Maatwebsite\Excel\Excel::CSV);
     }
 }

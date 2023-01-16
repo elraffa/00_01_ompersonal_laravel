@@ -14,6 +14,7 @@ Route::resource('users', UserController::class)
 Route::resource('members', MembersController::class)
     ->only(['index', 'update', 'store', 'destroy', 'create', 'edit'])
     ->middleware(['auth']);
+Route::get('members/export', [MembersController::class, 'export'])->name('members.export');
 
 /* Route::get('/', function () {
     return Inertia::render('views.welcome', [
