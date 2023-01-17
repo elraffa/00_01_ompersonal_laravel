@@ -112,7 +112,7 @@ export default function Register({ auth, user = {} }) {
                         </div>
 
                         <div className="mt-4">
-                            <InputLabel forInput="password" value="Password" />
+                            <InputLabel forInput="password" value="Contraseña" />
 
                             <TextInput
                                 id="password"
@@ -134,7 +134,7 @@ export default function Register({ auth, user = {} }) {
                         <div className="mt-4">
                             <InputLabel
                                 forInput="password_confirmation"
-                                value="Confirm Password"
+                                value="Confirmar contraseña"
                             />
 
                             <TextInput
@@ -218,7 +218,7 @@ export default function Register({ auth, user = {} }) {
                         </div>
 
                         <div className="mt-4">
-                            <InputLabel forInput="password" value="Password" />
+                            <InputLabel forInput="password" value="Contraseña" />
 
                             <TextInput
                                 id="password"
@@ -240,7 +240,7 @@ export default function Register({ auth, user = {} }) {
                         <div className="mt-4">
                             <InputLabel
                                 forInput="password_confirmation"
-                                value="Confirm Password"
+                                value="Confirmar contraseña"
                             />
 
                             <TextInput
