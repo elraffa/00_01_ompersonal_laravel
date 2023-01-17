@@ -1,5 +1,6 @@
 Dependencias:
 
+- Composer
 - PHP 8.0.13
 - Node 16.15.0
 - Mysql 5.7
