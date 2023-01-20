@@ -136,7 +136,7 @@ const Paginator = ({ data, routeCreate, routeEdit }) => {
                         } inline-flex items-center -space-x-px`}
                     >
                         {data.links.map((link) =>
-                            link.label === "&laquo; Previous" ? (
+                            link.label === "&laquo; Anterior" ? (
                                 <li key={link.label}>
                                     <Link
                                         href={link.url}
@@ -157,7 +157,7 @@ const Paginator = ({ data, routeCreate, routeEdit }) => {
                                         </svg>
                                     </Link>
                                 </li>
-                            ) : link.label === "Next &raquo;" ? (
+                            ) : link.label === "Siguiente &raquo;" ? (
                                 <li key={link.label}>
                                     <Link
                                         href={link.url}
