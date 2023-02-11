@@ -41,6 +41,7 @@ class UserController extends Controller
             'name' => 'required|string|max:255',
             'email' => 'required|string|email|max:255|unique:'.User::class,
             'password' => ['required', 'confirmed', Rules\Password::defaults()],
+            //'name' => 'required|string',
         ]);
 
         $user = User::create([
@@ -49,10 +50,12 @@ class UserController extends Controller
             'password' => Hash::make($request->password),
         ]);
 
+        //$user->assignRole($request->role);
+
         return redirect(RouteServiceProvider::USERS);
     }
 
-    public function storeFrontend(Request $request): RedirectResponse
+    public function storeMember(Request $request): RedirectResponse
     {
         $request->validate([
             'name' => 'required|string|max:255',
@@ -66,11 +69,13 @@ class UserController extends Controller
             'password' => Hash::make($request->password),
         ]);
 
+        $user->assignRole('member');
+
         event(new Registered($user));
 
         Auth::login($user); 
 
-        return redirect(RouteServiceProvider::DASHBOARD);
+        return redirect(RouteServiceProvider::HOME);
     }
     
     
