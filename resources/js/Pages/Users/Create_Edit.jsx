@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import AuthenticatedLayout from "@/Layouts/AuthenticatedLayout";
 import InputError from "@/Components/InputError";
 import InputLabel from "@/Components/InputLabel";
@@ -6,19 +6,36 @@ import PrimaryButton from "@/Components/PrimaryButton";
 import TextInput from "@/Components/TextInput";
 import { Head, Link, useForm } from "@inertiajs/inertia-react";
 import GuestLayout from "@/Layouts/GuestLayout";
+import ReactSelect from "react-select";
 
-export default function Register({ auth, user = {} }) {
+export default function Register({ auth, user = {}, roles = {} }) {
     const { data, setData, post, put, transform, processing, errors, reset } =
         useForm({
             name: "",
             email: "",
             password: "",
             password_confirmation: "",
+            role: { value: "empty", label: "Seleccione Rol" },
         });
+    const [allRoles, setAllRoles] = useState();
 
     useEffect(() => {
+        const rolesArrayForSelect = [];
+        roles.forEach((role) => {
+            rolesArrayForSelect.push({ value: role.name, label: role.name });
+        });
+        setAllRoles(rolesArrayForSelect);
+
         if (user?.id) {
-            setData({ ...data, name: user.name, email: user.email });
+            setData({
+                ...data,
+                name: user.name,
+                email: user.email,
+                role: {
+                    value: user?.role[0]?.name,
+                    label: user?.role[0]?.name,
+                },
+            });
         }
     }, []);
 
@@ -40,6 +57,11 @@ export default function Register({ auth, user = {} }) {
     const submit = (e) => {
         e.preventDefault();
 
+        transform((data) => ({
+            ...data,
+            role: data.role.value,
+        }));
+
         if (!user?.id) {
             if (route().current() === "register") {
                 post(route("register"));
@@ -58,6 +80,7 @@ export default function Register({ auth, user = {} }) {
         <>
             {route().current() !== "register" ? (
                 <AuthenticatedLayout
+                    role={user?.role[0]?.name}
                     auth={auth}
                     header={
                         <h2 className="font-semibold text-xl text-gray-800 leading-tight">
@@ -83,6 +106,7 @@ export default function Register({ auth, user = {} }) {
                                 isFocused={true}
                                 handleChange={onHandleChange}
                                 required
+                                disabled={user.email === "admin@admin.com"}
                             />
 
                             <InputError
@@ -103,6 +127,7 @@ export default function Register({ auth, user = {} }) {
                                 autoComplete="username"
                                 handleChange={onHandleChange}
                                 required
+                                disabled={user.email === "admin@admin.com"}
                             />
 
                             <InputError
@@ -111,8 +136,36 @@ export default function Register({ auth, user = {} }) {
                             />
                         </div>
 
+                        {user.email !== "admin@admin.com" && (
+                            <div className="mt-4">
+                                <InputLabel forInput="roles" value="Rol" />
+
+                                <ReactSelect
+                                    name="roles"
+                                    isSearchable={false}
+                                    options={allRoles}
+                                    value={data.role}
+                                    onChange={(value) =>
+                                        setData({ ...data, role: value })
+                                    }
+                                />
+
+                                <InputError
+                                    message={
+                                        errors.role == "validation.exclude_word"
+                                            ? "Debes elegir un rol"
+                                            : ""
+                                    }
+                                    className="mt-2"
+                                />
+                            </div>
+                        )}
+
                         <div className="mt-4">
-                            <InputLabel forInput="password" value="Contraseña" />
+                            <InputLabel
+                                forInput="password"
+                                value="Contraseña"
+                            />
 
                             <TextInput
                                 id="password"
@@ -159,7 +212,7 @@ export default function Register({ auth, user = {} }) {
                                     ? "Crear Usuario"
                                     : "Actualizar Usuario"}
                             </PrimaryButton>
-                            {user.id && (
+                            {user.id && user.email != "admin@admin.com" && (
                                 <Link
                                     className={`inline-flex items-center px-4 py-2 bg-red-800 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-red-700 focus:bg-gray-700 active:bg-red-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 transition ease-in-out duration-150`}
                                     href={route("users.destroy", user.id)}
@@ -218,7 +271,10 @@ export default function Register({ auth, user = {} }) {
                         </div>
 
                         <div className="mt-4">
-                            <InputLabel forInput="password" value="Contraseña" />
+                            <InputLabel
+                                forInput="password"
+                                value="Contraseña"
+                            />
 
                             <TextInput
                                 id="password"
@@ -260,8 +316,8 @@ export default function Register({ auth, user = {} }) {
                         </div>
 
                         <div className="flex items-center justify-between gap-2 mt-4">
-                            <Link href={route('login')}>
-                            ¿Ya estás registrado?
+                            <Link href={route("login")}>
+                                ¿Ya estás registrado?
                             </Link>
                             <PrimaryButton processing={processing}>
                                 Crear Usuario

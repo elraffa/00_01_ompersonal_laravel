@@ -2,18 +2,17 @@
 
 use Inertia\Inertia;
 use Illuminate\Support\Facades\Route;
-use Illuminate\Foundation\Application;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\MembersController;
 use App\Http\Controllers\ProfileController;
 
 Route::resource('users', UserController::class)
     ->only(['index', 'update', 'store', 'destroy', 'create', 'edit'])
-    ->middleware(['auth']);
+    ->middleware(['auth', 'admin']);
 
 Route::resource('members', MembersController::class)
     ->only(['index', 'update', 'store', 'destroy', 'create', 'edit'])
-    ->middleware(['auth']);
+    ->middleware(['auth', 'admin']);
 Route::get('members/export', [MembersController::class, 'export'])->name('members.export');
 
 /* Route::get('/', function () {
@@ -29,8 +28,14 @@ Route::get('/', function () {
 });
 
 Route::get('/dashboard', function () {
-    return Inertia::render('Dashboard');
+    $user = auth()->user();
+    return Inertia::render('Dashboard', [
+        'user' => [
+            'role' => $user->getRoleNames()->first()
+        ]
+    ]);
 })->middleware(['auth', 'verified'])->name('dashboard');
+
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');

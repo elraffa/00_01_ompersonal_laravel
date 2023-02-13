@@ -14,34 +14,42 @@ use Illuminate\Support\Facades\Hash;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Auth\Events\Registered;
 use App\Providers\RouteServiceProvider;
-
+use Spatie\Permission\Models\Role;
 
 class UserController extends Controller
 {
     public function create(): Response
     {
-        return Inertia::render('Users/Create_Edit');
+        $roles = Role::all();
+
+        return Inertia::render('Users/Create_Edit', [
+            'roles' => $roles
+        ]);
     }
 
     public function index()
     {
+        $user = auth()->user();
         return Inertia::render('Users/Index', [
             'users' => User::paginate(5)->through(fn ($user) => [
                 'id' => $user->id,
                 'name' => $user->name,
                 'email' => $user->email,
                 'created_at' => $user->created_at,
-            ])
+            ]),
+            'user' => [
+                'role' => $user->getRoleNames()->first()
+            ]
         ]);
     }
-    
+
     public function store(Request $request): RedirectResponse
     {
         $request->validate([
             'name' => 'required|string|max:255',
-            'email' => 'required|string|email|max:255|unique:'.User::class,
+            'email' => 'required|string|email|max:255|unique:' . User::class,
             'password' => ['required', 'confirmed', Rules\Password::defaults()],
-            //'name' => 'required|string',
+            'role' => ['required', 'string', 'exclude_word:empty'],
         ]);
 
         $user = User::create([
@@ -50,7 +58,7 @@ class UserController extends Controller
             'password' => Hash::make($request->password),
         ]);
 
-        //$user->assignRole($request->role);
+        $user->assignRole($request->role);
 
         return redirect(RouteServiceProvider::USERS);
     }
@@ -59,7 +67,7 @@ class UserController extends Controller
     {
         $request->validate([
             'name' => 'required|string|max:255',
-            'email' => 'required|string|email|max:255|unique:'.User::class,
+            'email' => 'required|string|email|max:255|unique:' . User::class,
             'password' => ['required', 'confirmed', Rules\Password::defaults()],
         ]);
 
@@ -73,21 +81,27 @@ class UserController extends Controller
 
         event(new Registered($user));
 
-        Auth::login($user); 
+        Auth::login($user);
 
-        return redirect(RouteServiceProvider::HOME);
+        return redirect(RouteServiceProvider::DASHBOARD);
     }
-    
-    
+
+
     public function update(Request $request, User $user)
     {
         $validated = $request->validate([
             'name' => 'required|string|max:255',
-            'email' => ['required', 'string','email','max:255', Rule::unique('users')->ignore($user->id)],
+            'email' => ['required', 'string', 'email', 'max:255', Rule::unique('users')->ignore($user->id)],
             'password' => ['nullable', 'confirmed', Rules\Password::defaults()],
+            'role' => ['required', 'string', 'exclude_word:empty']
         ]);
 
         $validated['password'] = Hash::make($user->password);
+
+        if (isset($request->role)) {
+            $user->syncRoles([]);
+            $user->assignRole($request->role);
+        }
 
         $user->update($validated);
 
@@ -97,15 +111,18 @@ class UserController extends Controller
 
     public function edit(User $user)
     {
+        $roles = Role::all();
         return Inertia::render('Users/Create_Edit', [
             'user' => [
                 'id' => $user->id,
                 'name' => $user->name,
                 'email' => $user->email,
+                'role' => $user->roles->toArray()
             ],
+            'roles' => $roles
         ]);
     }
-    
+
     public function destroy(User $user)
     {
         $user->delete();
