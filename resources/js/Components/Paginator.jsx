@@ -3,6 +3,7 @@ import { format } from "date-fns";
 import { Link } from "@inertiajs/inertia-react";
 
 const Paginator = ({ data, routeCreate, routeEdit }) => {
+    
     return (
         <div className="w-[90%] lg:w-3/4 mx-auto">
             <div className="mt-6 flex flex-col gap-2 sm:flex-row-reverse items-center justify-between">
@@ -64,6 +65,9 @@ const Paginator = ({ data, routeCreate, routeEdit }) => {
                                 Email
                             </th>
                             <th scope="col" className="px-6 py-3">
+                                Rol
+                            </th>
+                            <th scope="col" className="px-6 py-3">
                                 Fecha de creación
                             </th>
                             <th scope="col" className="px-6 py-3">
@@ -84,6 +88,7 @@ const Paginator = ({ data, routeCreate, routeEdit }) => {
                                     {element.name}
                                 </th>
                                 <td className="px-6 py-4">{element.email}</td>
+                                <td className="px-6 py-4">{element.role.name.toUpperCase()}</td>
                                 <td className="px-6 py-4">
                                     {format(
                                         new Date(element.created_at),

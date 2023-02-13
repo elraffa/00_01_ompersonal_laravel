@@ -35,6 +35,7 @@ class UserController extends Controller
                 'id' => $user->id,
                 'name' => $user->name,
                 'email' => $user->email,
+                'role' => $user->roles->toArray()[0],
                 'created_at' => $user->created_at,
             ]),
             'user' => [
