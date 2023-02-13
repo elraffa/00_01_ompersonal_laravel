@@ -8,7 +8,7 @@ import { Head, Link, useForm } from "@inertiajs/inertia-react";
 import GuestLayout from "@/Layouts/GuestLayout";
 import ReactSelect from "react-select";
 
-export default function Register({ auth, user = {}, roles = {} }) {
+export default function Register({ auth,auth_user, user = {}, roles = {} }) {
     const { data, setData, post, put, transform, processing, errors, reset } =
         useForm({
             name: "",
@@ -18,7 +18,7 @@ export default function Register({ auth, user = {}, roles = {} }) {
             role: { value: "empty", label: "Seleccione Rol" },
         });
     const [allRoles, setAllRoles] = useState();
-
+    
     useEffect(() => {
         const rolesArrayForSelect = [];
         roles.forEach((role) => {
@@ -80,7 +80,7 @@ export default function Register({ auth, user = {}, roles = {} }) {
         <>
             {route().current() !== "register" ? (
                 <AuthenticatedLayout
-                    role={user?.role[0]?.name}
+                    role={auth_user.role}
                     auth={auth}
                     header={
                         <h2 className="font-semibold text-xl text-gray-800 leading-tight">

@@ -21,15 +21,19 @@ class UserController extends Controller
     public function create(): Response
     {
         $roles = Role::all();
+        $auth_user = auth()->user();
 
         return Inertia::render('Users/Create_Edit', [
-            'roles' => $roles
+            'roles' => $roles,
+            'auth_user' => [
+                'role' => $auth_user ? $auth_user->getRoleNames()->first() : ""
+            ]
         ]);
     }
 
     public function index()
     {
-        $user = auth()->user();
+        $auth_user = auth()->user();
         return Inertia::render('Users/Index', [
             'users' => User::paginate(5)->through(fn ($user) => [
                 'id' => $user->id,
@@ -38,8 +42,8 @@ class UserController extends Controller
                 'role' => $user->roles->toArray()[0],
                 'created_at' => $user->created_at,
             ]),
-            'user' => [
-                'role' => $user->getRoleNames()->first()
+            'auth_user' => [
+                'role' => $auth_user->getRoleNames()->first()
             ]
         ]);
     }
@@ -58,7 +62,6 @@ class UserController extends Controller
             'email' => $request->email,
             'password' => Hash::make($request->password),
         ]);
-
         $user->assignRole($request->role);
 
         return redirect(RouteServiceProvider::USERS);
@@ -93,11 +96,14 @@ class UserController extends Controller
         $validated = $request->validate([
             'name' => 'required|string|max:255',
             'email' => ['required', 'string', 'email', 'max:255', Rule::unique('users')->ignore($user->id)],
-            'password' => ['nullable', 'confirmed', Rules\Password::defaults()],
+            'password' => ['nullable','confirmed', Rules\Password::defaults()],
             'role' => ['required', 'string', 'exclude_word:empty']
         ]);
-
-        $validated['password'] = Hash::make($user->password);
+        if(isset($request->password)){
+            $validated['password'] = Hash::make($user->password);
+        }else{
+            unset($validated['password']);
+        }
 
         if (isset($request->role)) {
             $user->syncRoles([]);
@@ -113,12 +119,16 @@ class UserController extends Controller
     public function edit(User $user)
     {
         $roles = Role::all();
+        $auth_user = auth()->user();
         return Inertia::render('Users/Create_Edit', [
             'user' => [
                 'id' => $user->id,
                 'name' => $user->name,
                 'email' => $user->email,
                 'role' => $user->roles->toArray()
+            ],
+            'auth_user' => [
+                'role' => $auth_user->getRoleNames()->first()
             ],
             'roles' => $roles
         ]);
