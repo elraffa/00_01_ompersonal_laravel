@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\User;
 use Inertia\Inertia;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
@@ -32,7 +33,10 @@ Route::get('/dashboard', function () {
     return Inertia::render('Dashboard', [
         'user' => [
             'role' => $user->getRoleNames()->first()
-        ]
+        ],
+        'users' => User::whereHas('roles', function ($q){
+            $q->where('name','!=','admin');
+        })->get()
     ]);
 })->middleware(['auth', 'verified'])->name('dashboard');
 
