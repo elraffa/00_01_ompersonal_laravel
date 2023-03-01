@@ -2,10 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Exports\MembersExport;
 use Inertia\Inertia;
 use App\Models\Member;
 use Illuminate\Http\Request;
+use App\Exports\MembersExport;
+use Spatie\Permission\Models\Role;
 use Maatwebsite\Excel\Facades\Excel;
 use App\Providers\RouteServiceProvider;
 
@@ -15,6 +16,7 @@ class MembersController extends Controller
     public function index()
     {
         $user = auth()->user();
+        $auth_user = auth()->user();
         return Inertia::render('Members/Index', [
             'members' => Member::paginate(50)->through(fn ($member) => [
                 'id' => $member->id,
@@ -24,6 +26,9 @@ class MembersController extends Controller
             ]),
             'user' => [
                 'role' => $user->getRoleNames()->first()
+            ],
+            'auth_user' => [
+                'role' => $auth_user ? $auth_user->getRoleNames()->first() : ""
             ]
         ]);
     }
