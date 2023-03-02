@@ -39,6 +39,9 @@ Route::get('/dashboard', function () {
             $q->where('name', '!=', 'admin');
         })->get(),
         'registered_users_last_week' => User::whereBetween('created_at', [Carbon::now()->subWeek(), Carbon::now()])
+            ->whereHas('roles', function ($q) {
+                $q->where('name', '!=', 'admin');
+            })
             ->get()
     ]);
 })->middleware(['auth', 'verified'])->name('dashboard');

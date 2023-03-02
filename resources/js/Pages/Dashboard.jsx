@@ -19,9 +19,9 @@ export default function Dashboard(props) {
         >
             <Head title="Dashboard" />
 
-            <div className="py-12">
+            <div className="py-12 w-[90%] md:w-full mx-auto">
                 <div className="max-w-7xl mx-auto sm:px-6 lg:px-8">
-                    <div className="bg-white overflow-hidden shadow-sm sm:rounded-lg">
+                    <div className="bg-white overflow-hidden shadow-sm rounded-lg text-center md:text-left">
                         <h1 className="p-4 text-[20px]">
                             Bienvenido {auth?.user?.name}, hay{" "}
                             {registered_users?.length}{" "}
@@ -32,15 +32,22 @@ export default function Dashboard(props) {
 
                         {registered_users_last_week?.length ? (
                             <h2 className="p-4 text-[16px]">
-                                En la útlima semana se {registered_users_last_week.length > 1
-                                        ? " han"
-                                        : " ha"} registrado{" "}
+                                En la útlima semana se{" "}
+                                {registered_users_last_week.length > 1
+                                    ? " han"
+                                    : " ha"}{" "}
+                                registrado{" "}
                                 {registered_users_last_week.length +
                                     (registered_users_last_week.length > 1
                                         ? " miembros"
                                         : " miembro")}
                             </h2>
-                        ) : ""}
+                        ) : (
+                            <h2 className="p-4 text-[16px]">
+                                No hubo nuevos registros de miembros en la
+                                última semana.
+                            </h2>
+                        )}
                     </div>
                 </div>
             </div>
