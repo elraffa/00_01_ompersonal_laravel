@@ -2,6 +2,7 @@
 
 use App\Models\User;
 use Inertia\Inertia;
+use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\MembersController;
@@ -34,9 +35,11 @@ Route::get('/dashboard', function () {
         'user' => [
             'role' => $user->getRoleNames()->first()
         ],
-        'users' => User::whereHas('roles', function ($q){
-            $q->where('name','!=','admin');
-        })->get()
+        'registered_users' => User::whereHas('roles', function ($q) {
+            $q->where('name', '!=', 'admin');
+        })->get(),
+        'registered_users_last_week' => User::whereBetween('created_at', [Carbon::now()->subWeek(), Carbon::now()])
+            ->get()
     ]);
 })->middleware(['auth', 'verified'])->name('dashboard');
 

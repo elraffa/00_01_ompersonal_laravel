@@ -1,15 +1,16 @@
 import AuthenticatedLayout from "@/Layouts/AuthenticatedLayout";
 import { Head } from "@inertiajs/inertia-react";
-import { useState } from "react";
 
 export default function Dashboard(props) {
+    const { user, registered_users_last_week, auth, errors, registered_users } =
+        props;
 
     return (
         <AuthenticatedLayout
-            role={props?.user?.role}
+            role={user?.role}
             propiedades={props}
-            auth={props.auth}
-            errors={props.errors}
+            auth={auth}
+            errors={errors}
             header={
                 <h2 className="font-semibold text-xl text-gray-800 leading-tight">
                     Dashboard
@@ -21,7 +22,25 @@ export default function Dashboard(props) {
             <div className="py-12">
                 <div className="max-w-7xl mx-auto sm:px-6 lg:px-8">
                     <div className="bg-white overflow-hidden shadow-sm sm:rounded-lg">
-                        <h1 className="p-4 text-[20px]">Bienvenido {props.auth.user.name}, hay {props.users.length} {props.users.length > 1 ? " miembros registrados" : " miembro registrado"}</h1>
+                        <h1 className="p-4 text-[20px]">
+                            Bienvenido {auth?.user?.name}, hay{" "}
+                            {registered_users?.length}{" "}
+                            {registered_users?.length !== 1
+                                ? " miembros registrados"
+                                : " miembro registrado"}
+                        </h1>
+
+                        {registered_users_last_week?.length ? (
+                            <h2 className="p-4 text-[16px]">
+                                En la útlima semana se {registered_users_last_week.length > 1
+                                        ? " han"
+                                        : " ha"} registrado{" "}
+                                {registered_users_last_week.length +
+                                    (registered_users_last_week.length > 1
+                                        ? " miembros"
+                                        : " miembro")}
+                            </h2>
+                        ) : ""}
                     </div>
                 </div>
             </div>

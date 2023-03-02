@@ -100,7 +100,7 @@ class UserController extends Controller
             'role' => ['required', 'string', 'exclude_word:empty']
         ]);
         if(isset($request->password)){
-            $validated['password'] = Hash::make($user->password);
+            $validated['password'] = Hash::make($request->password);
         }else{
             unset($validated['password']);
         }
