@@ -5,8 +5,11 @@ use Illuminate\Http\Request;
 
 define('LARAVEL_START', microtime(true));
 
+<<<<<<< HEAD
 ini_set('memory_limit', '-1');
 
+=======
+>>>>>>> 3a2808e (First Commit)
 /*
 |--------------------------------------------------------------------------
 | Check If The Application Is Under Maintenance

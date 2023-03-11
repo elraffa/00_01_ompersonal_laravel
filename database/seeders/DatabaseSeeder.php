@@ -14,9 +14,18 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
+<<<<<<< HEAD
         $this->call([
             RoleBuilderSeeder::class,
             AdminUserSeeder::class
         ]);
+=======
+        // \App\Models\User::factory(10)->create();
+
+        // \App\Models\User::factory()->create([
+        //     'name' => 'Test User',
+        //     'email' => 'test@example.com',
+        // ]);
+>>>>>>> 3a2808e (First Commit)
     }
 }

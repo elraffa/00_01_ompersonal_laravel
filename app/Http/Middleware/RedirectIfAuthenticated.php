@@ -23,7 +23,11 @@ class RedirectIfAuthenticated
 
         foreach ($guards as $guard) {
             if (Auth::guard($guard)->check()) {
+<<<<<<< HEAD
                 return redirect(RouteServiceProvider::DASHBOARD);
+=======
+                return redirect(RouteServiceProvider::HOME);
+>>>>>>> 3a2808e (First Commit)
             }
         }
 
