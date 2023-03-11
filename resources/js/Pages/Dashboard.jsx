@@ -1,5 +1,6 @@
 import AuthenticatedLayout from "@/Layouts/AuthenticatedLayout";
-import { Head } from "@inertiajs/inertia-react";
+import { Link, Head } from "@inertiajs/inertia-react";
+
 
 export default function Dashboard(props) {
     const { user, registered_users_last_week, auth, errors, registered_users } =
@@ -34,7 +35,7 @@ export default function Dashboard(props) {
                             </h2>
                         )}
 
-                        {registered_users_last_week?.length && user?.role === 'admin' && (
+                        {registered_users_last_week?.length > 0 && user?.role === 'admin' && (
                             <h2 className="p-4 text-[16px]">
                                 En la útlima semana se{" "}
                                 {registered_users_last_week.length > 1
@@ -47,6 +48,15 @@ export default function Dashboard(props) {
                                         : " miembro")}
                             </h2>
                         )}
+                        <h2 className="p-4 text-[16px]">
+                            Puedes hacer cambios en tu 
+                            <Link href={route("profile.edit")}>
+                                {` `}Perfil
+                            </Link>
+                        </h2>
+                    </div>
+                    <div>
+
                     </div>
                 </div>
             </div>
