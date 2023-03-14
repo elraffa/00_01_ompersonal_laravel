@@ -3,6 +3,7 @@ import { format } from "date-fns";
 import { Link } from "@inertiajs/inertia-react";
 
 const Paginator = ({ data, routeCreate, routeEdit }) => {
+    
     return (
         <div className="w-[90%] lg:w-3/4 mx-auto">
             <div className="mt-6 flex flex-col gap-2 sm:flex-row-reverse items-center justify-between">
@@ -60,6 +61,11 @@ const Paginator = ({ data, routeCreate, routeEdit }) => {
                             <th scope="col" className="px-6 py-3">
                                 Nombre
                             </th>
+                            {routeEdit === "members" && (
+                                <th scope="col" className="px-6 py-3">
+                                    Apellido
+                                </th>
+                            )}
                             <th scope="col" className="px-6 py-3">
                                 Email
                             </th>
@@ -83,12 +89,17 @@ const Paginator = ({ data, routeCreate, routeEdit }) => {
                                 key={element.id}
                                 className="bg-white border-b hover:bg-gray-50"
                             >
-                                <th
+                                <td
                                     scope="row"
                                     className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
                                 >
                                     {element.name}
-                                </th>
+                                </td>
+                                {routeEdit === "members" && (
+                                    <td className="px-6 py-4">
+                                        {element.last_name}
+                                    </td>
+                                )}
                                 <td className="px-6 py-4">{element.email}</td>
                                 {routeEdit === "users" && (
                                     <td className="px-6 py-4">
