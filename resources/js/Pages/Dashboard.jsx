@@ -23,14 +23,18 @@ export default function Dashboard(props) {
                 <div className="max-w-7xl mx-auto sm:px-6 lg:px-8">
                     <div className="bg-white overflow-hidden shadow-sm rounded-lg text-center md:text-left">
                         <h1 className="p-4 text-[20px]">
-                            Bienvenido {auth?.user?.name}, hay{" "}
-                            {registered_users?.length}{" "}
-                            {registered_users?.length !== 1
-                                ? " miembros registrados"
-                                : " miembro registrado"}
+                            Bienvenido {auth?.user?.name}
                         </h1>
+                        {user?.role === 'admin' && (
+                            <h2 className="px-4 text-[18px]">
+                                Hay {registered_users?.length}{" "}
+                                {registered_users?.length !== 1
+                                    ? " miembros registrados"
+                                    : " miembro registrado"}
+                            </h2>
+                        )}
 
-                        {registered_users_last_week?.length ? (
+                        {registered_users_last_week?.length && user?.role === 'admin' && (
                             <h2 className="p-4 text-[16px]">
                                 En la útlima semana se{" "}
                                 {registered_users_last_week.length > 1
@@ -41,11 +45,6 @@ export default function Dashboard(props) {
                                     (registered_users_last_week.length > 1
                                         ? " miembros"
                                         : " miembro")}
-                            </h2>
-                        ) : (
-                            <h2 className="p-4 text-[16px]">
-                                No hubo nuevos registros de miembros en la
-                                última semana.
                             </h2>
                         )}
                     </div>
