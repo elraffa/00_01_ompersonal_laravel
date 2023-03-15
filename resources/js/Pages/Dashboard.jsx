@@ -25,7 +25,7 @@ export default function Dashboard(props) {
                         <h1 className="p-4 text-[20px]">
                             Bienvenido {auth?.user?.name}
                         </h1>
-                        {user?.role === 'admin' && (
+                        {user?.role === "admin" && (
                             <h2 className="px-4 text-[18px]">
                                 Hay {registered_users?.length}{" "}
                                 {registered_users?.length !== 1
@@ -34,19 +34,20 @@ export default function Dashboard(props) {
                             </h2>
                         )}
 
-                        {registered_users_last_week?.length && user?.role === 'admin' && (
-                            <h2 className="p-4 text-[16px]">
-                                En la útlima semana se{" "}
-                                {registered_users_last_week.length > 1
-                                    ? " han"
-                                    : " ha"}{" "}
-                                registrado{" "}
-                                {registered_users_last_week.length +
-                                    (registered_users_last_week.length > 1
-                                        ? " miembros"
-                                        : " miembro")}
-                            </h2>
-                        )}
+                        {(registered_users_last_week?.length &&
+                            user?.role === "admin") ? (
+                                <h2 className="p-4 text-[16px]">
+                                    En la útlima semana se{" "}
+                                    {registered_users_last_week.length > 1
+                                        ? " han"
+                                        : " ha"}
+                                    registrado{" "}
+                                    {registered_users_last_week.length +
+                                        (registered_users_last_week.length > 1
+                                            ? " miembros"
+                                            : " miembro")}
+                                </h2>
+                            ) : ""}
                     </div>
                 </div>
             </div>
