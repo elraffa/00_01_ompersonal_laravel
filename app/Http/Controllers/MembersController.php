@@ -21,6 +21,7 @@ class MembersController extends Controller
             'members' => Member::paginate(50)->through(fn ($member) => [
                 'id' => $member->id,
                 'name' => $member->name,
+                'last_name' => $member->last_name,
                 'email' => $member->email,
                 'created_at' => $member->created_at,
             ]),
