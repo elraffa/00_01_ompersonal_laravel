@@ -35,7 +35,7 @@ function UserSearch({ data, onFilter }) {
     };
 
     return (
-        <div>
+        <div className="flex flex-row">
             <label htmlFor="table-search" className="sr-only">
                 Search
             </label>
@@ -60,7 +60,7 @@ function UserSearch({ data, onFilter }) {
                     value={query}
                     className="block p-2 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg w-80 bg-gray-50 focus:ring-blue-500 focus:border-blue-500"
                     onChange={handleFilter} />
-                <button className="px-4 py-2 bg-green-800 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-green-700 focus:bg-green-700 active:bg-green-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 transition ease-in-out duration-150" onClick={handleSearch}>Buscar</button>
+                
             </div>
         </div>
 
