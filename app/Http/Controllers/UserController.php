@@ -140,4 +140,17 @@ class UserController extends Controller
 
         return redirect(RouteServiceProvider::USERS);
     }
+
+    public function search(Request $request)
+    {
+        $query = $request->input('query');
+
+        if (empty($query)) {
+            $users = User::all();
+        } else {
+            $users = User::where('name', 'like', "%$query%")->get();
+        }
+    
+        return response()->json($users);
+    }
 }

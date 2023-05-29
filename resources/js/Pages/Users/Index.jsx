@@ -3,6 +3,7 @@ import { Head } from "@inertiajs/inertia-react";
 import AuthenticatedLayout from "@/Layouts/AuthenticatedLayout";
 import Paginator from "@/Components/Paginator";
 
+
 function Index({auth, users, auth_user}) {
     
     return (
