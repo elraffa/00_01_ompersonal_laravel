@@ -66,7 +66,7 @@
                                         <div class="om_dropdown_menu-col">
                                             <h3 class="om_dropdown_menu-heading-3">Etapa Especialización</h3>
                                             <a class="om_dropdown_menu-item" href="http://www.ompersonal.com.ar/omcompany/presentacion.htm">Avanzado de Negocios</a>
-                                            <a class="om_dropdown_menu-item" href="http://www.ompersonal.com.ar/omtalk/presentacion.htm">Pronunciación en Inglés</a>
+                                            <a class="om_dropdown_menu-item" href="https://www.ompersonal.com.ar/ompronounce/presentacion.htm">Pronunciación en Inglés</a>
                                             <a class="om_dropdown_menu-item" href="http://www.ompersonal.com.ar/OMWRITE/contenidotematico.htm">Redacción en Inglés</a>
                                             <a class="om_dropdown_menu-item" href="http://www.ompersonal.com.ar/omtalk/presentacion.htm">Conversación en Inglés</a>
                                             <a class="om_dropdown_menu-item" href="http://www.ompersonal.com.ar/omdeaf/presentacion.htm">Básico a Intermedio Bajo para
@@ -214,7 +214,7 @@
                                     <div class="om_dropdown_menu-servicios">
                                         <div class="om_dropdown_menu-servicios-col">
                                             <a href="http://www.ompersonal.com.ar/niveldeingles.htm">Cómo estudiar</a>
-                                            <a href="#">¿Británico o Americano?</a>
+                                            <a href="https://www.ompersonal.com.ar/FAQ/britanico-americano.htm">¿Británico o Americano?</a>
                                             <a href="http://www.ompersonal.com.ar/FAQ/certificados2.htm">Nuestros certificados</a>
                                             <a href="http://www.ompersonal.com.ar/test">Exámenes automatizados</a>
                                             <a href="https://www.cuentoseningles.com.ar/">Cuentos y artículos en inglés</a>
@@ -222,8 +222,8 @@
                                         <div class="om_dropdown_menu-servicios-col">
                                             <a href="http://www.ompersonal.com.ar/FAQ/faq.htm">Preguntas frecuentes</a>
                                             <a href="http://www.ompersonal.com.ar/mapadelsitio.htm">Mapa del sitio</a>
-                                            <a href="#">Boletín mensual gratuito</a>
-                                            <a href="#">Prensa y Entrevistas</a>
+                                            <a href="https://www.boletineningles.com/">Boletín mensual gratuito</a>
+                                            <a href="https://www.ompersonal.com.ar/awards/ITbusiness.htm">Prensa y Entrevistas</a>
                                             <a href="http://www.ompersonal.com.ar/legales.htm">Términos legales</a>
                                         </div>
 
