@@ -41,4 +41,9 @@ class HandleInertiaRequests extends Middleware
             },
         ]);
     }
+
+    public function shouldHandle(Request $request): bool
+    {
+        return !$request->is('messages/{id}'); // Replace 'messages/{id}' with your actual route
+    }
 }

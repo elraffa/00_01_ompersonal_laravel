@@ -1,12 +1,16 @@
 <?php
 
 use App\Models\User;
+use App\Models\Message;
 use Inertia\Inertia;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\MembersController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\MessageController;
+
+
 
 Route::resource('users', UserController::class)
     ->only(['index', 'update', 'store', 'destroy', 'create', 'edit'])
@@ -26,7 +30,9 @@ Route::get('members/export', [MembersController::class, 'export'])->name('member
 }); */
 
 Route::get('/', function () {
-    return view('welcome');
+    $message = Message::find(1); // Replace '1' with the appropriate message ID
+    return view('welcome', ['message' => $message]);
+
 });
 
 Route::get('/dashboard', function () {
@@ -54,6 +60,15 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 
     Route::get('/search', [UserController::class, 'search'])->name('user.search');
+
+    Route::get('/messages', [MessageController::class, 'index'])->name('messages.index');
+    Route::get('/messages/create', [MessageController::class, 'create']);
+    Route::post('/messages', [MessageController::class, 'store'])->name('messages.store');
+    Route::get('/messages/{id}', [MessageController::class, 'show'])->name('messages.show');
+    Route::put('/messages/{id}', [MessageController::class, 'update'])->name('messages.update');
+
+
+    // Add routes for update() and delete() if needed
 
 });
 

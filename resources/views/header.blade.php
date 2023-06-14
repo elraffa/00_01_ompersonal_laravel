@@ -213,7 +213,7 @@
                                     <h2><i class="fas fa-tools"></i> Servicios</h2>
                                     <div class="om_dropdown_menu-servicios">
                                         <div class="om_dropdown_menu-servicios-col">
-                                            <a href="http://www.ompersonal.com.ar/niveldeingles.htm">Cómo estudiar</a>
+                                            <a href="http://www.ompersonal.com.ar/niveldeingles.htm">Cómo estudiar en esta web</a>
                                             <a href="https://www.ompersonal.com.ar/FAQ/britanico-americano.htm">¿Británico o Americano?</a>
                                             <a href="http://www.ompersonal.com.ar/FAQ/certificados2.htm">Nuestros certificados</a>
                                             <a href="http://www.ompersonal.com.ar/test">Exámenes automatizados</a>
