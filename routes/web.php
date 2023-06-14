@@ -61,6 +61,7 @@ Route::middleware('auth')->group(function () {
     Route::get('/messages/create', [MessageController::class, 'create']);
     Route::post('/messages', [MessageController::class, 'store'])->name('messages.store');
     Route::get('/messages/{id}', [MessageController::class, 'show'])->name('messages.show');
+    Route::put('/messages/{id}', [MessageController::class, 'update'])->name('messages.update');
 
     // Add routes for update() and delete() if needed
 

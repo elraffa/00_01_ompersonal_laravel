@@ -14,8 +14,6 @@ const CreateMessage = () => {
     const [content, setContent] = useState('');
     const [message, setMessage] = useState('');
 
-    console.log(message.content);
-
     const editorRef = useRef(null);
 
     useEffect(() => {
@@ -35,8 +33,8 @@ const CreateMessage = () => {
         e.preventDefault();
 
         if (editorRef.current) {
-          Inertia.post('/messages', { content: editorRef.current.getContent() });
-          setContent({
+          Inertia.put('/messages/1', { content: editorRef.current.getContent() });
+          setMessage({
             content: editorRef.current.getContent(),
           });
         }

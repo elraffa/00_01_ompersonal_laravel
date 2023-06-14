@@ -40,4 +40,17 @@ class MessageController extends Controller
 
         // Redirect or return a response
     }
+
+    public function update(Request $request, $id) 
+    {
+        $request->validate([
+            'content' => 'required',
+        ]);
+
+        $message = Message::find($id);
+        $message->content = $request->input('content');
+        $message->save();
+
+        // Redirect or return a response
+    }
 }
