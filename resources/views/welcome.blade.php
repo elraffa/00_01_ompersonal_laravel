@@ -14,7 +14,7 @@
             </div>
         </div><!-- End hero -->
 
-        @if($message)
+        @if($message && !empty($message->content))
         <div class="home-message">
             <div class="home-message__content container">
             {!! $message->content !!} 
