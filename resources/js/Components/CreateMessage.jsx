@@ -1,14 +1,9 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Inertia } from '@inertiajs/inertia';
-import { usePage } from '@inertiajs/inertia-react';
 import PrimaryButton from './PrimaryButton';
-import 'trix';
-import 'trix/dist/trix.css';
 import Wysiwyg from './Wysiwyg';
 import { Editor } from '@tinymce/tinymce-react';
 import axios from 'axios';
-
-
 
 const CreateMessage = () => {
     const [content, setContent] = useState('');

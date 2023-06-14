@@ -14,6 +14,14 @@
             </div>
         </div><!-- End hero -->
 
+        @if($message)
+        <div class="home-message">
+            <div class="home-message__content container">
+            {!! $message->content !!} 
+            </div>
+        </div>
+        @endif
+
         <!-- Begin novedades -->
         <div class="novedades">
             <div class="novedades__content container">
