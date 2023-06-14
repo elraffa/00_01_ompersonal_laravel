@@ -1,8 +1,10 @@
 import AuthenticatedLayout from "@/Layouts/AuthenticatedLayout";
 import { Head } from "@inertiajs/inertia-react";
+import Wysiwyg from "@/Components/Wysiwyg";
+import CreateMessage from "@/Components/CreateMessage";
 
 export default function Dashboard(props) {
-    const { user, registered_users_last_week, auth, errors, registered_users } =
+    const { user, registered_users_last_week, auth, errors, registered_users, content } =
         props;
 
     return (
@@ -48,6 +50,18 @@ export default function Dashboard(props) {
                                             : " miembro")}
                                 </h2>
                             ) : ""}
+                    </div>
+                    <div>
+                        <div className="bg-white overflow-hidden shadow-sm rounded-lg mt-4">
+                            <div className="p-6 bg-white border-b border-gray-200">
+                                <h2 className="text-[20px]">
+                                    Mensajes
+                                </h2>
+                                <div className="mt-4">
+                                    <CreateMessage />
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
