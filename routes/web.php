@@ -72,4 +72,15 @@ Route::middleware('auth')->group(function () {
 
 });
 
+/** ORIGINAL WEBSITE ROUTES */
+
+Route::get('/original', function () {
+    return file_get_contents(__DIR__ . '/../resources/pages/index.htm');
+});
+
+Route::get('/omkids', function () {
+    return file_get_contents(__DIR__ . '/../resources/pages/omkids/index.htm');
+});
+
+
 require __DIR__ . '/auth.php';
