@@ -48,7 +48,7 @@
                                     <div class="om_dropdown_menu">
                                         <div class="om_dropdown_menu-col">
                                             <h3 class="om_dropdown_menu-heading-3">Etapa Iniciación</h3>
-                                            <a class="om_dropdown_menu-item" href="http://original.ompersonal.com.ar/omkids">Principiantes (A1)</a>
+                                            <a class="om_dropdown_menu-item" href="http://original.ompersonal.com.ar/omkids/presentacion.htm">Principiantes (A1)</a>
                                             <h3 class="om_dropdown_menu-heading-3">Etapa Aprendizaje</h3>
                                             <a class="om_dropdown_menu-item" href="http://original.ompersonal.com.ar/ELEMENTARY/presentacion.htm">Básico a Intermedio Bajo (A2)</a>
                                             <a class="om_dropdown_menu-item" href="http://original.ompersonal.com.ar/INTERMEDIATE/presentacion.htm">Intermedio a Intermedio Alto (B1 -
