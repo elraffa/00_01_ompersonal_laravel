@@ -52,6 +52,7 @@ export default function Dashboard(props) {
                             ) : ""}
                     </div>
                     <div>
+                    {user?.role === "admin" && (
                         <div className="bg-white overflow-hidden shadow-sm rounded-lg mt-4">
                             <div className="p-6 bg-white border-b border-gray-200">
                                 <h2 className="text-[20px]">
@@ -62,6 +63,8 @@ export default function Dashboard(props) {
                                 </div>
                             </div>
                         </div>
+                        )
+                        }
                     </div>
                 </div>
             </div>
