@@ -10,8 +10,8 @@
                  
              </div>
              <div class="footer__col">
-                 <h4 class="title__heading-4"><a href="http://www.ompersonal.com.ar/legales.htm">Términos Legales</a></h4>
-                 <h4 class="title__heading-4"><a href="http://www.ompersonal.com.ar/legales.htm">Datos Personales</a></h4>
+                 <h4 class="title__heading-4"><a href="http://original.ompersonal.com.ar/legales.htm">Términos Legales</a></h4>
+                 <h4 class="title__heading-4"><a href="http://original.ompersonal.com.ar/legales.htm">Datos Personales</a></h4>
                  <h4 class="title__heading-4"><a href="mailto:info@ompersonal.com.ar">Correo Electrónico</a></h4>
                  <h4 class="title__heading-4"><a href="/">Home page</a></h4>
 
