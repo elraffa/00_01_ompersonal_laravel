@@ -66,7 +66,7 @@
                                         <div class="om_dropdown_menu-col">
                                             <h3 class="om_dropdown_menu-heading-3">Etapa Especialización</h3>
                                             <a class="om_dropdown_menu-item" href="http://original.ompersonal.com.ar/omcompany/presentacion.htm">Avanzado de Negocios</a>
-                                            <a class="om_dropdown_menu-item" href="https://original.ompersonal.com.ar/ompronounce/presentacion.htm">Pronunciación en Inglés</a>
+                                            <a class="om_dropdown_menu-item" href="http://original.ompersonal.com.ar/ompronounce/presentacion.htm">Pronunciación en Inglés</a>
                                             <a class="om_dropdown_menu-item" href="http://original.ompersonal.com.ar/OMWRITE/contenidotematico.htm">Redacción en Inglés</a>
                                             <a class="om_dropdown_menu-item" href="http://original.ompersonal.com.ar/omtalk/presentacion.htm">Conversación en Inglés</a>
                                             <a class="om_dropdown_menu-item" href="http://original.ompersonal.com.ar/omdeaf/presentacion.htm">Básico a Intermedio Bajo para
