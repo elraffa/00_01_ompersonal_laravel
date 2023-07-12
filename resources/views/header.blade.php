@@ -214,7 +214,7 @@
                                     <div class="om_dropdown_menu-servicios">
                                         <div class="om_dropdown_menu-servicios-col">
                                             <a href="http://original.ompersonal.com.ar/niveldeingles.htm">Cómo estudiar en esta web</a>
-                                            <a href="https://original.ompersonal.com.ar/FAQ/britanico-americano.htm">¿Británico o Americano?</a>
+                                            <a href="http://original.ompersonal.com.ar/FAQ/britanico-americano.htm">¿Británico o Americano?</a>
                                             <a href="http://original.ompersonal.com.ar/FAQ/certificados2.htm">Nuestros certificados</a>
                                             <a href="http://original.ompersonal.com.ar/test">Exámenes automatizados</a>
                                             <a href="https://www.cuentoseningles.com.ar/">Cuentos y artículos en inglés</a>
@@ -223,7 +223,7 @@
                                             <a href="http://original.ompersonal.com.ar/FAQ/faq.htm">Preguntas frecuentes</a>
                                             <a href="http://original.ompersonal.com.ar/mapadelsitio.htm">Mapa del sitio</a>
                                             <a href="https://www.boletineningles.com/">Boletín mensual gratuito</a>
-                                            <a href="https://original.ompersonal.com.ar/awards/ITbusiness.htm">Prensa y Entrevistas</a>
+                                            <a href="http://original.ompersonal.com.ar/awards/ITbusiness.htm">Prensa y Entrevistas</a>
                                             <a href="http://original.ompersonal.com.ar/legales.htm">Términos legales</a>
                                         </div>
 
