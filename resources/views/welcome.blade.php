@@ -56,23 +56,14 @@
 
                     <button class="accordion">2. ¿Dónde puedo inscribirme?</button>
                     <div class="panel">
-                        <p>Apúntate gratuitamente en http://tinyurl.com/62el78 Como respuesta a tu inscripción recibirás
-                            nuestro mensaje "Te Damos la Bienvenida". Si no lo ves en la Bandeja de Entrada de tu
-                            casilla, revisa las carpetas "Spam", "Mensajes No Solicitados" o "Promociones"). IMPORTANTE:
-                            La ética es un valor fundamental en nuestro trabajo. Respétala y no te inscribas con emails
-                            falsos o con emails de "uso temporario" porque no lograrás inscribirte y el sistema te
-                            rechazará automáticamente. Ver lista de dominios de email prohibidos.</p>
+                        <p>Regístrate gratuitamente en <a href="https://ompersonal.com.ar/register"><strong>https://ompersonal.com.ar/register</strong></a>. Como respuesta a tu inscripción recibirás un mensaje que debes confirmar pulsando el botón "Confirma aquí tu email". Si no lo ves en la Bandeja de Entrada de tu cuenta de correo, revisa las carpetas "Spam" o "Mensajes No Solicitados". <strong>IMPORTANTE: Si te inscribes con un correo GMAIL -- y tienes una cuenta gratuita de Google Drive -- asegúrate que te encuentras dentro del máximo de GB ofrecidos sin cargo. Si te has excedido nunca podrás inscribirte porque Google lo rechaza.</strong></p>
                     </div>
 
                     <button class="accordion">3. ¿Los miembros de una misma familia o grupo de amigos pueden inscribirse
                         con un mismo Email?</button>
                     <div class="panel">
                         <p>
-                            <span class="bold">Cada estudiante debe inscribirse con su email personal</span> porque al
-                            momento de solicitar los exámenes finales verificamos –no sólo la antigüedad como estudiante
-                            inscrito– sino también que los datos del solicitante coincidan en un 100% con los datos
-                            declarados al momento de inscribirse. La coincidencia de datos debe ser total: nombres
-                            completos y apellidos completos para que podamos extender correctamente cada certificado.
+                            <span class="bold">Cada estudiante debe inscribirse con su email personal</span> porque al momento de solicitar los exámenes finales verificamos que los datos del solicitante coincidan en un 100% con los datos declarados al momento de inscribirse. La coincidencia de datos debe ser total: nombres completos y apellidos completos para que podamos extender correctamente cada certificado.
                         </p>
                     </div>
                     <button class="accordion">4. ¿Existe algún requisito de edad para realizar los cursos?</button>
