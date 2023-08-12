@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import { format } from "date-fns";
 import { Link } from "@inertiajs/inertia-react";
 import UserSearch from '@/Components/UserSearch';
@@ -11,7 +11,7 @@ const Paginator = ({ data, routeCreate, routeEdit }) => {
     const handleFilter = (filteredUsers) => {
         setFilteredUsers(filteredUsers);
     };
-    
+
     return (
         <div className="w-[90%] lg:w-3/4 mx-auto">
             <div className="mt-6 flex flex-col gap-2 sm:flex-row-reverse items-center justify-between">
@@ -34,6 +34,7 @@ const Paginator = ({ data, routeCreate, routeEdit }) => {
                     )}
                 </div>
                 <UserSearch data={data} onFilter={handleFilter} />
+                 
             </div>
             <div className="relative mt-6 h-full overflow-x-auto overflow-y-hidden shadow-md sm:rounded-lg">
                 <table className="w-full text-sm text-left text-gray-500">
@@ -65,7 +66,7 @@ const Paginator = ({ data, routeCreate, routeEdit }) => {
                         </tr>
                     </thead>
                     <tbody>
-                        {filteredUsers.map((element) => (
+                        {data.data.map((element) => (
                             <tr
                                 key={element.id}
                                 className="bg-white border-b hover:bg-gray-50"
@@ -134,9 +135,8 @@ const Paginator = ({ data, routeCreate, routeEdit }) => {
                         </span>
                     </span>
                     <ul
-                        className={`${
-                            data.total <= data.per_page && "hidden"
-                        } inline-flex items-center -space-x-px`}
+                        className={`${data.total <= data.per_page && "hidden"
+                            } inline-flex items-center -space-x-px`}
                     >
                         {data.links.map((link) =>
                             link.label === "&laquo; Anterior" ? (
@@ -186,10 +186,9 @@ const Paginator = ({ data, routeCreate, routeEdit }) => {
                                 <li key={link.label}>
                                     <Link
                                         href={link.url}
-                                        className={`${
-                                            link.active &&
+                                        className={`${link.active &&
                                             "text-blue-600 border border-blue-300 bg-blue-50 hover:bg-blue-100 hover:text-blue-700"
-                                        } px-3 py-2 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700`}
+                                            } px-3 py-2 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700`}
                                     >
                                         {link.label}
                                     </Link>

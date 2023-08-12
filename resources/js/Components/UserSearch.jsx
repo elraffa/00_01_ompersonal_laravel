@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+//import Inertia from "@inertiajs/inertia-react";
+import { Inertia } from '@inertiajs/inertia';
 
 function UserSearch({ data, onFilter }) {
     const [query, setQuery] = useState('');
@@ -10,28 +12,13 @@ function UserSearch({ data, onFilter }) {
         setFilteredUsers(data.data);
       }, [data.data]);
 
-    const handleSearch = () => {
-        axios.get(`/search?query=${query}`)
-            .then(response => {
-                setUsers(response.data);
-                setFilteredUsers(response.data);
-            })
-            .catch(error => {
-                console.error(error);
-            });
-    };
-
     const handleFilter = (e) => {
         const filterQuery = e.target.value;
         setQuery(filterQuery);
-    
-        if (filterQuery.trim() === '') {
-          setFilteredUsers(data.data); // Reset to all users when the query is empty
-        } else {
-          const filteredResults = data.data.filter(user => user.name.toLowerCase().includes(filterQuery.toLowerCase()));
-          setFilteredUsers(filteredResults);
-          onFilter(filteredResults); // Pass the filtered users back to the Paginator component
-        }
+
+        Inertia.get('/users', { search: filterQuery }, {
+            preserveState: true,
+        });
     };
 
     return (
@@ -55,12 +42,14 @@ function UserSearch({ data, onFilter }) {
                         ></path>
                     </svg>
                 </div>
+                <div className="flex flex-row">
                 <input
                     type="text"
                     value={query}
                     className="block p-2 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg w-80 bg-gray-50 focus:ring-blue-500 focus:border-blue-500"
                     onChange={handleFilter} 
                 />
+                </div>
             </div>
         </div>
 

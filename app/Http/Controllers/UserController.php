@@ -31,11 +31,19 @@ class UserController extends Controller
         ]);
     }
 
-    public function index()
+    public function index( Request $request )
     {
+        $query = $request->input('search');
+
         $auth_user = auth()->user();
         return Inertia::render('Users/Index', [
-            'users' => User::paginate(5)->through(fn ($user) => [
+            'users' => User::
+            query()
+            ->when($request->input('search'), function( $query, $search ) {
+                $query->where('email', 'like', '%' . $search . '%');
+            })
+            ->paginate(40)
+            ->through(fn ($user) => [
                 'id' => $user->id,
                 'name' => $user->name,
                 'email' => $user->email,
