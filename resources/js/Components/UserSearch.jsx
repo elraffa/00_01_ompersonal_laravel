@@ -53,9 +53,6 @@ function UserSearch({ data, onFilter }) {
             </div>
         </div>
 
-
-
-
     );
 }
 
