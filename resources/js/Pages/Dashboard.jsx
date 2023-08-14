@@ -41,8 +41,8 @@ export default function Dashboard(props) {
                                 <h2 className="p-4 text-[16px]">
                                     En la útlima semana se{" "}
                                     {registered_users_last_week.length > 1
-                                        ? " han"
-                                        : " ha"}
+                                        ? " han "
+                                        : " ha "}
                                     registrado{" "}
                                     {registered_users_last_week.length +
                                         (registered_users_last_week.length > 1
