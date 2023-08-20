@@ -78,17 +78,17 @@ const Paginator = ({ data, routeCreate, routeEdit }) => {
                                     {element.name}
                                 </td>
                                 {routeEdit === "members" && (
-                                    <td className="px-6 py-4">
+                                    <td className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
                                         {element.last_name}
                                     </td>
                                 )}
-                                <td className="px-6 py-4">{element.email}</td>
+                                <td className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">{element.email}</td>
                                 {routeEdit === "users" && (
-                                    <td className="px-6 py-4">
+                                    <td className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
                                         {element?.role?.name.toUpperCase()}
                                     </td>
                                 )}
-                                <td className="px-6 py-4">
+                                <td className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
                                     {format(
                                         new Date(element.created_at),
                                         "dd-MM-yyyy hh:mm"
