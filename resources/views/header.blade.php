@@ -4,8 +4,9 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="google-site-verification" content="r5zXrN_DF4mQiAvoFgRGBSC-lr_iQRkNEXFAvBGmKps" />
+        <meta name="description" content="Cursos de inglés gratis online con certificado. Aprende inglés gratis con ejercicios, exámenes, audio, pronunciación y más.">
 
-        <title>OMPersonal English</title>
+        <title>OMPersonal English | Cursos Online de Ingles Gratis Certificado</title>
 
         <!-- Fonts -->
         <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
