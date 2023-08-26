@@ -5,6 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="google-site-verification" content="r5zXrN_DF4mQiAvoFgRGBSC-lr_iQRkNEXFAvBGmKps" />
         <meta name="description" content="Cursos de inglés gratis online con certificado. Aprende inglés gratis con ejercicios, exámenes, audio, pronunciación y más.">
+        <meta name="keywords" content="cursos de ingles gratis, cursos de ingles online, cursos de ingles gratis con certificado, cursos de ingles gratis online" />
+        <meta name="author" content="OMPersonal English">      
 
         <title>OMPersonal English | Cursos Online de Ingles Gratis Certificado</title>
 

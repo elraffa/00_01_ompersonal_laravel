@@ -4,7 +4,7 @@
         <!-- Begin Hero -->
         <div class="hero container">
             <div class="hero__content">
-                <h1 class="hero__title">Cursos y certificados</h1>
+                <h2 class="hero__title">Cursos y certificados</h2>
                 <h1 class="hero__subtitle bold">Estudia inglés 100% gratis</h1>
                 <a href="/register" class="btn btn__primary-lg">Inscríbete gratis</a>
             </div>
@@ -31,7 +31,7 @@
                 <div class="novedades__text">
                     <div class="novedades__copy">
                         <h3>Novedad</h3>
-                        <h1 class="novedades__title title__heading-1">Certificados</h1>
+                        <h2 class="novedades__title title__heading-1">Certificados</h2>
                         <h3 class="novedades__text title__heading-2 bold">Estrenamos nuevos exámenes automatizados</h3>
                         <p class="title__heading-3">Con evaluación automática y generación de certificados</p>
                     </div>
@@ -44,7 +44,7 @@
         <div class="faq">
             <div class="faq__content">
 
-                <h1 class="faq__title title__heading-1 align-center">FAQ</h1>
+                <h2 class="faq__title title__heading-1 align-center">FAQ</h2>
 
                 <div class="faq__accordion">
 
