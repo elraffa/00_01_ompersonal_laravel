@@ -6,7 +6,9 @@
         <meta name="google-site-verification" content="r5zXrN_DF4mQiAvoFgRGBSC-lr_iQRkNEXFAvBGmKps" />
         <meta name="description" content="Cursos de inglés gratis online con certificado. Aprende inglés gratis con ejercicios, exámenes, audio, pronunciación y más.">
         <meta name="keywords" content="cursos de ingles gratis, cursos de ingles online, cursos de ingles gratis con certificado, cursos de ingles gratis online" />
-        <meta name="author" content="OMPersonal English">      
+        <meta name="author" content="OMPersonal English">
+        <meta name="robots" content="index, follow">
+        <meta name="googlebot" content="index, follow">      
 
         <title>OMPersonal English | Cursos Online de Ingles Gratis Certificado</title>
 
@@ -17,6 +19,7 @@
         <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('/img/favicons/favicon-32x32.png') }}">
         <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('/img/favicons/favicon-16x16.png') }}">
         <link rel="manifest" href="{{ asset('/img/favicons/site.webmanifest') }}">
+        <link rel="canonical" href="https://ompersonal.com.ar/">
 
         <!-- Styles -->
         <link rel="stylesheet" href="/css/main.css">
