@@ -107,8 +107,7 @@
                                     <div class="om_dropdown_menu-aprendizaje">
                                         <div class="om_dropdown_menu-aprendizaje-col">
                                             <a href="http://original.ompersonal.com.ar/omexpress/indicetematico.htm"><span class='bold'>OM Express</span><br><span class="small">200
-                                                    diccionarios
-                                                    sonoros bilingües</span></a>
+                                                    vocabularios                                                  bilingües con audio</span></a>
                                             <a href="http://original.ompersonal.com.ar/omconnector/contenidotematico.htm"><span class='bold'>OM Connector</span><br><span
                                                     class="small">150 conectores
                                                     con ejemplos y actividades</span></a>
@@ -118,6 +117,11 @@
                                             <a href="http://original.ompersonal.com.ar/omverbs/contenidotematico.htm"><span class='bold'>OM Verbs</span><br><span class="small">Listas
                                                     de verbos
                                                     regulares e irregulares</span></a>
+                                            <a href="http://original.ompersonal.com.ar/omexam/contenidotematico.htm"><span class='bold'>OM Exam</span><br><span class="small">Exámenes imprimibles en 6 niveles
+                                            </span></a>
+                                            <a href="http://original.ompersonal.com.ar/omevaluation/contenidotematico.htm"><span class='bold'>OM Evaluation</span><br><span class="small">50 prácticas autoevaluaciones con puntaje</span></a>
+                                            <a href="http://original.ompersonal.com.ar/omdictation/contenidotematico.htm"><span class='bold'>OM Dictation</span><br><span class="small">Dictados interactivos en 4 niveles</span></a>
+                                            <a href="http://original.ompersonal.com.ar/firstcertificate/contenidotematico.htm"><span class='bold'>OM FCE</span><br><span class="small">Ejercicios First Certificate con respuestas</span></a>
                                         </div>
                                         <div class="om_dropdown_menu-aprendizaje-col">
                                             <a href="http://original.ompersonal.com.ar/omphrasal/contenidotematico.htm"><span class='bold'>OM Phrasal</span><br><span class="small">1000
@@ -132,6 +136,14 @@
                                             <a href="http://original.ompersonal.com.ar/omexercise/contenidotematico.htm"><span class='bold'>OM Exercise</span><br><span
                                                     class="small">Ejercicios
                                                     interactivos e imprimibles</span></a>
+                                            <a href="http://original.ompersonal.com.ar/omlibrary/contenidotematico.htm"><span class='bold'>OM Library</span><br><span
+                                                    class="small">Descarga libros de escritores de habla inglesa</span></a>
+                                            <a href="http://original.ompersonal.com.ar/ompoetry/contenidotematico.htm"><span class='bold'>OM Poetry</span><br><span
+                                                    class="small">Selección poética a través de afamados escritores</span></a>
+                                            <a href="http://original.ompersonal.com.ar/omweather/WeatherReport.htm"><span class='bold'>OM Weather</span><br><span
+                                                    class="small">Pronóstico del tiempo en 17 ciudades de EE.UU.</span></a>
+                                            <a href="http://original.ompersonal.com.ar/omgames/contenidotematico.htm"><span class='bold'>OM Games</span><br><span
+                                                    class="small">Crucigramas, rompecabezas, sopas de letras y más</span></a>
                                         </div>
                                     </div>
                                 </div>
@@ -169,6 +181,7 @@
                                             <a href="http://original.ompersonal.com.ar/ombus/contenidotematico.htm"><span class='bold'>OM Bus</span><br><span class="small">Charlas
                                                     a bordo de
                                                     un autobús</span></a>
+                                            <a href="http://original.ompersonal.com.ar/ompeople/contenidotematico.htm"><span class='bold'>OM People</span><br><span class="small">Escucha a 8 amigos en una cena</span></a>
                                         </div>
                                         <div class="om_dropdown_menu-col">
                                             <h3 class="om_dropdown_menu-heading-3 mobile-hide">&nbsp;</h3>
@@ -187,6 +200,7 @@
                                             <a href="http://original.ompersonal.com.ar/omsmiles/contenidotematico.htm"><span class='bold'>OM Smiles</span><br><span class="small">Risa
                                                     terapéutica
                                                     en divertidas historias</span></a>
+                                            <a href="http://original.ompersonal.com.ar/ommovies/contenidotematico.htm"><span class='bold'>OM Movies</span><br><span class="small">Diálogos de 8 exitosas películas</span></a>
                                         </div>
                                         <div class="om_dropdown_menu-col">
                                             <h3 class="om_dropdown_menu-heading-3">Variedades</h3>
@@ -205,6 +219,8 @@
                                             <a href="http://original.ompersonal.com.ar/omchristmas/contenidotematico.htm"><span class='bold'>OM Christmas</span><br><span
                                                     class="small">Nuestra
                                                     colección de música navideña</span></a>
+                                            <a href="http://original.ompersonal.com.ar/omclassics/contenidotematico.htm"><span class='bold'>OM Classics</span><br><span
+                                                    class="small">Canciones de nuestras películas favoritas</span></a>
                                         </div>
                                     </div>
                                 </div>
@@ -232,6 +248,7 @@
                                             <a href="http://original.ompersonal.com.ar/FAQ/certificados2.htm">Nuestros certificados</a>
                                             <a href="http://original.ompersonal.com.ar/test">Exámenes automatizados</a>
                                             <a href="https://www.cuentoseningles.com.ar/">Cuentos y artículos en inglés</a>
+                                            <a href="https://www.emagister.com/cursos-om-personal-english-cen-55956.htm" target="_blank">Encuéntranos en EMAGISTER</a>
                                         </div>
                                         <div class="om_dropdown_menu-servicios-col">
                                             <a href="http://original.ompersonal.com.ar/FAQ/faq.htm">Preguntas frecuentes</a>
