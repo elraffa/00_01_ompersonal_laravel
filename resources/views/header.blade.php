@@ -65,9 +65,9 @@
                                             <a class="om_dropdown_menu-item" href="http://original.ompersonal.com.ar/omkids/presentacion.htm">Principiantes (A1)</a>
                                             <h3 class="om_dropdown_menu-heading-3">Etapa Aprendizaje</h3>
                                             <a class="om_dropdown_menu-item" href="http://original.ompersonal.com.ar/ELEMENTARY/presentacion.htm">Básico a Intermedio Bajo (A2)</a>
-                                            <a class="om_dropdown_menu-item" href="http://original.ompersonal.com.ar/INTERMEDIATE/presentacion.htm">Intermedio a Intermedio Alto (B1 -
+                                            <a class="om_dropdown_menu-item" href="http://original.ompersonal.com.ar/INTERMEDIATE/presentacion.htm">Intermedio a Intermedio Alto<br> (B1 -
                                                 Primera Parte)</a>
-                                            <a class="om_dropdown_menu-item" href="http://original.ompersonal.com.ar/ADVANCED/presentacion.htm">Avanzado Conversacional (B1 -
+                                            <a class="om_dropdown_menu-item" href="http://original.ompersonal.com.ar/ADVANCED/presentacion.htm">Avanzado Conversacional<br> (B1 -
                                                 Segunda Parte)</a>
                                         </div>
                                         <div class="om_dropdown_menu-col">
@@ -220,7 +220,7 @@
                                                     class="small">Nuestra
                                                     colección de música navideña</span></a>
                                             <a href="http://original.ompersonal.com.ar/omclassics/contenidotematico.htm"><span class='bold'>OM Classics</span><br><span
-                                                    class="small">Canciones de nuestras películas favoritas</span></a>
+                                                    class="small">Canciones de películas favoritas</span></a>
                                         </div>
                                     </div>
                                 </div>
