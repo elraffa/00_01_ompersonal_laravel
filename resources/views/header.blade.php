@@ -256,6 +256,7 @@
                                             <a href="https://www.boletineningles.com/">Boletín mensual gratuito</a>
                                             <a href="http://original.ompersonal.com.ar/awards/ITbusiness.htm">Prensa y Entrevistas</a>
                                             <a href="http://original.ompersonal.com.ar/legales.htm">Términos legales</a>
+                                            <a href="http://original.ompersonal.com.ar/index.htm">Antigua Home Page</a>
                                         </div>
 
                                     </div>
