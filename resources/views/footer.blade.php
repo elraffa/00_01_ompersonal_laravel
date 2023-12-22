@@ -5,14 +5,13 @@
          <div class="footer__row">
 
              <div class="footer__col--wide">
-                 
+
                      <img src="{{ asset('/img') }}/logo.png" width="150" />
-                 
+
              </div>
              <div class="footer__col">
                  <h4 class="title__heading-4"><a href="http://original.ompersonal.com.ar/legales.htm">Términos Legales</a></h4>
                  <h4 class="title__heading-4"><a href="http://original.ompersonal.com.ar/legales.htm">Datos Personales</a></h4>
-                 <h4 class="title__heading-4"><a href="mailto:info@ompersonal.com.ar">Correo Electrónico</a></h4>
                  <h4 class="title__heading-4"><a href="/">Home page</a></h4>
 
              </div>
@@ -44,7 +43,7 @@
              <div class="footer__copyright">
                  <p class="footer__text-legales"><span class="bold"><?php echo date('Y'); ?> - OM PERSONAL MULTIMEDIA ENGLISH: Desde 1999 en Internet.<br>© Orlando Moure - Todos los derechos reservados</span>
                  <p class="footer__text-legales"> Buenos Aires, República Argentina </p>
-                 <p class="footer__text-legales">Queda absolutamente prohibida la reproducción o descarga de contenidos de
+                 <p class="footer__text-legales">Queda prohibida la reproducción o descarga de contenidos de
                      este portal.</p>
              </div>
          </div>
