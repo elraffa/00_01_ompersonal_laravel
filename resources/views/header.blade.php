@@ -25,8 +25,8 @@
         <link rel="stylesheet" href="/css/main.css">
         @vite(['resources/sass/main.scss', 'resources/js/app.js'])
         <script src="https://kit.fontawesome.com/3a69b944ac.js" crossorigin="anonymous"></script>
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7773468020149242"
-     crossorigin="anonymous"></script>
+        <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7773468020149242"
+     crossorigin="anonymous"></script> -->
 
     </head>
     <body>
