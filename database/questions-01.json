@@ -1,0 +1,103 @@
+[
+    {
+        "question": "What nationality is the orchestra?",
+        "choices": ["A. American", "B. Italian", "C. Mexican"],
+        "correctAnswer": "B. Italian"
+    },
+    {
+        "question": "The audience is...",
+        "choices": [
+            "A. enjoying the music",
+            "B. listening to Mr. Sohn.",
+            "C. listening and enjoying."
+        ],
+        "correctAnswer": "C. listening and enjoying."
+    },
+    {
+        "question": "Mr. Sohn is going to a restaurant because...",
+        "choices": [
+            "A. he needs to have food.",
+            "B. he feels very tired.",
+            "C. he is very thirsty."
+        ],
+        "correctAnswer": "A. he needs to have food."
+    },
+    {
+        "question": "Which sentence is TRUE?",
+        "choices": [
+            "A. Mr. Sohn and Miss. Hoch don't like potatoes.",
+            "B. The musicians are coming from Germany.",
+            "C. Miss. Hoch likes beer very much."
+        ],
+        "correctAnswer": "C. Miss. Hoch likes beer very much."
+    },
+    {
+        "question": "Which sentence is FALSE?",
+        "choices": [
+            "A. Mr. Sohn is very hungry.",
+            "B. Miss. Hoch likes blue dresses.",
+            "C. The stadium is in Mexico."
+        ],
+        "correctAnswer": "B. Miss. Hoch likes blue dresses."
+    },
+    {
+        "question": "How much does the food cost there?",
+        "choices": [
+            "A. How much costs the food there?",
+            "B. How much do the food cost there?",
+            "C. How much does the food cost there?"
+        ],
+        "correctAnswer": "C. How much does the food cost there?"
+    },
+
+    {
+        "question": "Question 11.",
+        "choices": ["A. stopping", "B. walking", "C. going"],
+        "correctAnswer": ""
+    },
+    {
+        "question": "Question 12.",
+        "choices": ["A. putting", "B. buying", "C. giving"],
+        "correctAnswer": ""
+    },
+    {
+        "question": "Question 13.",
+        "choices": ["A. to sit", "B. to live", "C. to walk"],
+        "correctAnswer": ""
+    },
+    {
+        "question": "Question 14.",
+        "choices": ["A. to travel", "B. to swim", "C. to live"],
+        "correctAnswer": ""
+    },
+    {
+        "question": "Question 15.",
+        "choices": ["A. go", "B. goes", "C. are going"],
+        "correctAnswer": ""
+    },
+    {
+        "question": "Question 16.",
+        "choices": ["A. stay", "B. is staying", "C. are staying"],
+        "correctAnswer": ""
+    },
+    {
+        "question": "Question 17.",
+        "choices": ["A. drink", "B. eat", "C. wear"],
+        "correctAnswer": ""
+    },
+    {
+        "question": "Question 18.",
+        "choices": ["A. watching", "B. leaving", "C. taking"],
+        "correctAnswer": ""
+    },
+    {
+        "question": "Question 19.",
+        "choices": ["A. is", "B. was", "C. will be"],
+        "correctAnswer": ""
+    },
+    {
+        "question": "Question 20.",
+        "choices": ["A. is swimming", "B. swim", "C. swims"],
+        "correctAnswer": ""
+    }
+]

@@ -9,6 +9,7 @@ use App\Http\Controllers\UserController;
 use App\Http\Controllers\MembersController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\MessageController;
+use App\Http\Controllers\ExamController;
 
 
 
@@ -37,10 +38,13 @@ Route::get('/', function () {
 
 Route::get('/dashboard', function () {
     $user = auth()->user();
+    $exams = App\Models\Exam::all(); // Add this line
+
     return Inertia::render('Dashboard', [
         'user' => [
             'role' => $user->getRoleNames()->first()
         ],
+        'exams' => $exams, // Add this line
         'registered_users' => User::whereHas('roles', function ($q) {
             $q->where('name', '!=', 'admin');
         })->get(),
@@ -69,6 +73,8 @@ Route::middleware('auth')->group(function () {
 
 
     // Add routes for update() and delete() if needed
+    Route::get('/create_exam', [ExamController::class, 'createExam']);
+    Route::get('/exam/{id}', [ExamController::class, 'showExam']);
 
 });
 
