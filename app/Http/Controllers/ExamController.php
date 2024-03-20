@@ -46,6 +46,6 @@ class ExamController extends Controller
     {
         $exam = Exam::with('questions.choices')->find($id);
 
-        return Inertia::render('Exams/Exam-01', ['exam' => $exam]);
+        return Inertia::render('Exams/Exam-01/Exam-01', ['exam' => $exam]);
     }
 }
