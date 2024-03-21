@@ -24,6 +24,7 @@ class ExamController extends Controller
             $question = new Question;
             $question->exam_id = $exam->id;
             $question->question_text = $questionData['question'];
+            $question->audio_path = $questionData['audio_path'] ?? null;
             $question->save();
 
             foreach ($questionData['choices'] as $choiceText) {
