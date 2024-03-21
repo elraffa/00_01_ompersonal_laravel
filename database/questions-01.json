@@ -41,6 +41,15 @@
         "correctAnswer": "B. Miss. Hoch likes blue dresses."
     },
     {
+        "question": "Question 6.",
+        "choices": [
+            "A. How much costs the food there?",
+            "B. How much do the food cost there?",
+            "C. How much does the food cost there?"
+        ],
+        "correctAnswer": "C. How much does the food cost there?"
+    },
+    {
         "question": "How much does the food cost there?",
         "choices": [
             "A. How much costs the food there?",
@@ -49,7 +58,6 @@
         ],
         "correctAnswer": "C. How much does the food cost there?"
     },
-
     {
         "question": "Question 11.",
         "choices": ["A. stopping", "B. walking", "C. going"],
@@ -98,6 +106,276 @@
     {
         "question": "Question 20.",
         "choices": ["A. is swimming", "B. swim", "C. swims"],
+        "correctAnswer": ""
+    },
+    {
+        "question": "Question 21.",
+        "choices": [
+            "A. dummy choice 1",
+            "B. dummy choice 2",
+            "C. dummy choice 3"
+        ],
+        "correctAnswer": ""
+    },
+    {
+        "question": "Question 22.",
+        "choices": [
+            "A. dummy choice 1",
+            "B. dummy choice 2",
+            "C. dummy choice 3"
+        ],
+        "correctAnswer": ""
+    },
+    {
+        "question": "Question 23.",
+        "choices": [
+            "A. dummy choice 1",
+            "B. dummy choice 2",
+            "C. dummy choice 3"
+        ],
+        "correctAnswer": ""
+    },
+    {
+        "question": "Question 24.",
+        "choices": [
+            "A. dummy choice 1",
+            "B. dummy choice 2",
+            "C. dummy choice 3"
+        ],
+        "correctAnswer": ""
+    },
+    {
+        "question": "Question 25.",
+        "choices": [
+            "A. dummy choice 1",
+            "B. dummy choice 2",
+            "C. dummy choice 3"
+        ],
+        "correctAnswer": ""
+    },
+    {
+        "question": "Question 26.",
+        "choices": [
+            "A. dummy choice 1",
+            "B. dummy choice 2",
+            "C. dummy choice 3"
+        ],
+        "correctAnswer": ""
+    },
+    {
+        "question": "Question 27.",
+        "choices": [
+            "A. dummy choice 1",
+            "B. dummy choice 2",
+            "C. dummy choice 3"
+        ],
+        "correctAnswer": ""
+    },
+    {
+        "question": "Question 28.",
+        "choices": [
+            "A. dummy choice 1",
+            "B. dummy choice 2",
+            "C. dummy choice 3"
+        ],
+        "correctAnswer": ""
+    },
+    {
+        "question": "Question 29.",
+        "choices": [
+            "A. dummy choice 1",
+            "B. dummy choice 2",
+            "C. dummy choice 3"
+        ],
+        "correctAnswer": ""
+    },
+    {
+        "question": "Question 30.",
+        "choices": [
+            "A. dummy choice 1",
+            "B. dummy choice 2",
+            "C. dummy choice 3"
+        ],
+        "correctAnswer": ""
+    },
+    {
+        "question": "Question 31.",
+        "choices": [
+            "A. dummy choice 1",
+            "B. dummy choice 2",
+            "C. dummy choice 3"
+        ],
+        "correctAnswer": ""
+    },
+    {
+        "question": "Question 32.",
+        "choices": [
+            "A. dummy choice 1",
+            "B. dummy choice 2",
+            "C. dummy choice 3"
+        ],
+        "correctAnswer": ""
+    },
+    {
+        "question": "Question 33.",
+        "choices": [
+            "A. dummy choice 1",
+            "B. dummy choice 2",
+            "C. dummy choice 3"
+        ],
+        "correctAnswer": ""
+    },
+    {
+        "question": "Question 34.",
+        "choices": [
+            "A. dummy choice 1",
+            "B. dummy choice 2",
+            "C. dummy choice 3"
+        ],
+        "correctAnswer": ""
+    },
+    {
+        "question": "Question 35.",
+        "choices": [
+            "A. dummy choice 1",
+            "B. dummy choice 2",
+            "C. dummy choice 3"
+        ],
+        "correctAnswer": ""
+    },
+    {
+        "question": "Question 36.",
+        "choices": [
+            "A. dummy choice 1",
+            "B. dummy choice 2",
+            "C. dummy choice 3"
+        ],
+        "correctAnswer": ""
+    },
+    {
+        "question": "Question 37.",
+        "choices": [
+            "A. dummy choice 1",
+            "B. dummy choice 2",
+            "C. dummy choice 3"
+        ],
+        "correctAnswer": ""
+    },
+    {
+        "question": "Question 38.",
+        "choices": [
+            "A. dummy choice 1",
+            "B. dummy choice 2",
+            "C. dummy choice 3"
+        ],
+        "correctAnswer": ""
+    },
+    {
+        "question": "Question 39.",
+        "choices": [
+            "A. dummy choice 1",
+            "B. dummy choice 2",
+            "C. dummy choice 3"
+        ],
+        "correctAnswer": ""
+    },
+    {
+        "question": "Question 40.",
+        "choices": [
+            "A. dummy choice 1",
+            "B. dummy choice 2",
+            "C. dummy choice 3"
+        ],
+        "correctAnswer": ""
+    },
+    {
+        "question": "Question 41.",
+        "choices": [
+            "A. dummy choice 1",
+            "B. dummy choice 2",
+            "C. dummy choice 3"
+        ],
+        "correctAnswer": ""
+    },
+    {
+        "question": "Question 42.",
+        "choices": [
+            "A. dummy choice 1",
+            "B. dummy choice 2",
+            "C. dummy choice 3"
+        ],
+        "correctAnswer": ""
+    },
+    {
+        "question": "Question 43.",
+        "choices": [
+            "A. dummy choice 1",
+            "B. dummy choice 2",
+            "C. dummy choice 3"
+        ],
+        "correctAnswer": ""
+    },
+    {
+        "question": "Question 44.",
+        "choices": [
+            "A. dummy choice 1",
+            "B. dummy choice 2",
+            "C. dummy choice 3"
+        ],
+        "correctAnswer": ""
+    },
+    {
+        "question": "Question 45.",
+        "choices": [
+            "A. dummy choice 1",
+            "B. dummy choice 2",
+            "C. dummy choice 3"
+        ],
+        "correctAnswer": ""
+    },
+    {
+        "question": "Question 46.",
+        "choices": [
+            "A. dummy choice 1",
+            "B. dummy choice 2",
+            "C. dummy choice 3"
+        ],
+        "correctAnswer": ""
+    },
+    {
+        "question": "Question 47.",
+        "choices": [
+            "A. dummy choice 1",
+            "B. dummy choice 2",
+            "C. dummy choice 3"
+        ],
+        "correctAnswer": ""
+    },
+    {
+        "question": "Question 48.",
+        "choices": [
+            "A. dummy choice 1",
+            "B. dummy choice 2",
+            "C. dummy choice 3"
+        ],
+        "correctAnswer": ""
+    },
+    {
+        "question": "Question 49.",
+        "choices": [
+            "A. dummy choice 1",
+            "B. dummy choice 2",
+            "C. dummy choice 3"
+        ],
+        "correctAnswer": ""
+    },
+    {
+        "question": "Question 50.",
+        "choices": [
+            "A. dummy choice 1",
+            "B. dummy choice 2",
+            "C. dummy choice 3"
+        ],
         "correctAnswer": ""
     }
 ]

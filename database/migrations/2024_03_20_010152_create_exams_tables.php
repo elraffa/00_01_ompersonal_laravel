@@ -25,6 +25,7 @@ return new class extends Migration
             $table->id();
             $table->foreignId('exam_id')->constrained();
             $table->string('question_text');
+            $table->string('audio_path')->nullable(); 
             $table->timestamps();
         });
 

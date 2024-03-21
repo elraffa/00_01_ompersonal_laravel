@@ -1,0 +1,42 @@
+[
+    {
+        "title": "Questions 1 to 5",
+        "subtitle": "Lee atentamente el texto del recuadro y selecciona la alternativa (A, B, o C) que consideres correcta para cada pregunta.",
+        "description": "Today there is a concert in a Mexican stadium with Mr. Sohn, the musician, and an orchestra from Italy playing the music of Bach. A woman in a green dress and white shoes, Miss. Hoch – together with the other people in the audience – is listening to the musicians and enjoying their music. After the concert, Mr. Sohn is going to walk to a restaurant with Miss. Hoch because he is very hungry. Miss. Hoch is going to order a hamburger, fried potatoes, and a big beer. The musician is going to order steak, potatoes and a salad. He is going to order wine because he does not like beer.",
+        "descriptionClass": "text-lg font-bold mb-6 bg-gray-100 p-4 rounded",
+        "numQuestions": 5,
+        "class": "grid grid-cols-2 md:grid-cols-3"
+    },
+    {
+        "title": "Questions 6 to 10",
+        "subtitle": "Lee atentamente el texto del recuadro y selecciona la alternativa (A, B, o C) que consideres correcta para cada pregunta.",
+        "description": "Tom y Jane han recibido desde África una tarjeta postal de los Gryn. Al haberse mojado el sobre en el trayecto, les resulta difícil entenderla porque algunas palabras se encuentran borrosas. Prepara las cinco preguntas #6 a #10 que Tom y Jane piensan hacerles a sus padres cuando los llamen a su hotel. Para ello, selecciona abajo la alternativa (A, B, o C) que consideres correcta para cada pregunta.",
+        "descriptionClass": "text-lg font-bold mb-6 bg-gray-100 p-4 rounded",
+        "numQuestions": 5,
+        "class": "grid grid-cols-2"
+    },
+    {
+        "title": "Questions 11 to 15",
+        "description": "This is section 3",
+        "numQuestions": 5,
+        "class": "grid grid-cols-2"
+    }, 
+    {
+        "title": "Questions 26 to 30",
+        "description": "This is section 4",
+        "numQuestions": 5,
+        "class": "grid grid-cols-2"
+    },
+    {
+        "title": "Questions 31 to 35",
+        "description": "This is section 3",
+        "numQuestions": 5,
+        "class": "grid grid-cols-2"
+    }, 
+    {
+        "title": "Questions 36 to 40",
+        "description": "This is section 4",
+        "numQuestions": 5,
+        "class": "grid grid-cols-2"
+    }
+]
