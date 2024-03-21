@@ -50,7 +50,7 @@ const Exam01 = ({ exam }) => {
     const currentSections = sectionsData.slice((currentPage - 1) * sectionsPerPage, currentPage * sectionsPerPage)
 
     // Define sections
-    let newQuestionIndex = questionIndex
+    let newQuestionIndex = (currentPage - 1) * sectionsPerPage * currentSections[0].numQuestions
 
     const newSections = currentSections.map((section) => {
       const questionsForSection = exam.questions.slice(newQuestionIndex, newQuestionIndex + section.numQuestions)
