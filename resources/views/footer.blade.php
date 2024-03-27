@@ -17,7 +17,7 @@
              </div>
              <div class="footer__col">
                  <div class="title__heading-4"><a href="/register">Regístrate</a></div>
-                 <div class="title__heading-4"><a href="/login">Iniciar Sesión</a></div>
+                 <!-- <div class="title__heading-4"><a href="/login">Iniciar Sesión</a></div> -->
 
              </div>
 
