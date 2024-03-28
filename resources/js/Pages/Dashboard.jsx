@@ -70,9 +70,7 @@ export default function Dashboard(props) {
             <div className="p-6 bg-white border-b border-gray-200">
               {' '}
               <p>
-                Este es tu Escritorio. Ahora que estás registrado/a, puedes
-                acceder a los exámenes haciendo{' '}
-                <a href="http://original.ompersonal.com.ar/test" className='text-blue-600 font-bold'>click aquí.</a>
+              Ahora que te has registrado, <a href="http://ompersonal.com.ar" className='text-blue-600 font-bold'>PULSA AQUÍ</a> para conocer los cursos y tutoriales de la plataforma o <a href="http://original.ompersonal.com.ar/test" className='text-blue-600 font-bold'>PULSA AQUÍ</a> para acceder al examen de nivel OM Placement Test o cualquiera de nuestros exámenes finales.
               </p>
             </div>
           </div>
